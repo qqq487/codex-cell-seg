@@ -1,6 +1,8 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
+
 import argparse
 import logging
-import os
 
 import numpy as np
 import torch
@@ -9,22 +11,51 @@ from PIL import Image, ImageOps
 from torchvision import transforms
 
 from utils.data_loading import BasicDataset
+
 from unet import UNet
 from utils.utils import plot_img_and_mask
+import torchvision.transforms.functional as TF
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+
+
+def stack_imgs(imgs):
+    ## get first ch because in this case three channel are the same
+    list_img_one_ch = [img[0] for img in imgs] 
+    res = torch.stack(list_img_one_ch, dim=0)
+    return res
+
+
 
 def predict_img(net,
-                full_img,
+                full_imgs,
                 device,
                 scale_factor=1,
                 out_threshold=0.5):
+    
+    ## Normalize & stack data
+    norm_imgs = []
+    
+    for full_img in full_imgs:
+        
+        img_tf = TF.to_tensor(full_img)
+        
+        mean, std = img_tf.mean([1,2]), img_tf.std([1,2])
 
-    net.eval()
-    img = torch.from_numpy(BasicDataset.preprocess(full_img, scale_factor, is_mask=False))
+        transform_norm = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Normalize(mean, std),
+        ])
+        
+        _img = transform_norm(full_img)
+        _img = _img.to(device=device, dtype=torch.float32)
+        
+        norm_imgs.append(_img)
+        
+    img = stack_imgs(norm_imgs)
     img = img.unsqueeze(0)
-    img = img.to(device=device, dtype=torch.float32)
-
+    
+    net.eval()
+    
     with torch.no_grad():
         output = net(img)
 
@@ -40,19 +71,26 @@ def predict_img(net,
         ])
 
         full_mask = tf(probs.cpu()).squeeze()
+        
+        ## add predict threshold
+        thresh_func = torch.nn.Threshold(out_threshold, 0)
+        full_mask[1] = thresh_func(full_mask[1])  ## full_mask[0] = back_ground prob, full_mask[1] = cell prob
+    
 
     if net.n_classes == 1:
         return (full_mask > out_threshold).numpy()
     else:
-        #return (full_mask > out_threshold).numpy()#
         return (F.one_hot(full_mask.argmax(dim=0), net.n_classes).permute(2, 0, 1)).numpy()
 
 
 def get_args():
     parser = argparse.ArgumentParser(description='Predict masks from input images')
-    parser.add_argument('--model', '-m', default='checkpoints/checkpoint_epoch892.pth', metavar='FILE',
+    parser.add_argument('--model', '-m', default='checkpoints_norm_aug_batch_4/checkpoint_epoch801.pth', metavar='FILE',
                         help='Specify the file in which the model is stored')
-    parser.add_argument('--input', '-i', metavar='INPUT', nargs='+', help='Filenames of input images', required=True)
+    
+    parser.add_argument('--input_folder', '-if', type=str, default="NULL", help='Filename of input folder')
+
+    parser.add_argument('--input', '-i', metavar='INPUT', nargs='+', help='Filenames of input images')
     parser.add_argument('--output', '-o', metavar='INPUT', nargs='+', help='Filenames of output images')
     parser.add_argument('--viz', '-v', action='store_true',
                         help='Visualize the images as they are processed')
@@ -79,13 +117,25 @@ def mask_to_image(mask: np.ndarray):
     elif mask.ndim == 3:
         return Image.fromarray((np.argmax(mask, axis=0) * 255 / mask.shape[0]).astype(np.uint8))
 
-
+    
 if __name__ == '__main__':
     args = get_args()
-    in_files = args.input
-    out_files = get_output_filenames(args)
+    
+    if args.input_folder != "NULL":
+        in_files = [os.path.join(args.input_folder, f) for f in os.listdir(args.input_folder)\
+                    if (os.path.isdir(os.path.join(args.input_folder, f)) and ("outputs" not in f) and (not f.startswith('.')))]
 
-    net = UNet(n_channels=3, n_classes=2)
+        out_files = [os.path.join(args.input_folder,"outputs", f+'.png') for f in os.listdir(args.input_folder)\
+                     if (os.path.isdir(os.path.join(args.input_folder, f)) and ("outputs" not in f) and (not f.startswith('.')))]
+        
+        print("in_files = ",in_files)
+        print("out_files = ",out_files)
+
+    else:
+        in_files = args.input
+        out_files = get_output_filenames(args)
+
+    net = UNet(n_channels=5, n_classes=2)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Loading model {args.model}')
@@ -98,25 +148,20 @@ if __name__ == '__main__':
 
     for i, filename in enumerate(in_files):
         logging.info(f'\nPredicting image {filename} ...')
+        
+        if os.path.isdir(filename):
+            img = [Image.open(os.path.join(filename,f)) for f in os.listdir(filename) if not f.startswith('.')]
 
-        img = Image.open(filename)
-        #img = ImageOps.equalize(img, mask = None)
-
-        # infer_tfm = transforms.Compose([
-        #     #transforms.Resize((128, 128)),
-        #     transforms.ToTensor(),
-        #     transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.225, 0.225, 0.225]),
-        #     transforms.ToPILImage(),
-        # ])
-
-        #img = infer_tfm(img)
+        else:
+            ## not implement yet
+            img = Image.open(filename).convert('L')
 
         mask = predict_img(net=net,
-                           full_img=img,
+                           full_imgs=img,
                            scale_factor=args.scale,
                            out_threshold=args.mask_threshold,
                            device=device)
-
+    
         if not args.no_save:
             out_filename = out_files[i]
             result = mask_to_image(mask)
