@@ -1,0 +1,16 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Traceback (most recent call last):
+  File "train.py", line 207, in <module>
+    amp=args.amp)
+  File "train.py", line 82, in train_net
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate, betas=(0.9, 0.999), eps=1e-08, weight_decay=0, amsgrad=False)
+NameError: name 'model' is not defined

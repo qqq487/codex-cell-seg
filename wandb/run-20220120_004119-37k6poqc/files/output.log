@@ -1,0 +1,36 @@
+name =  4
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/4_mask.npy')]
+img_file =  [PosixPath('data/multi-org-same-ch/imgs/4')]
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                    | 0/4 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    amp=args.amp)
+  File "train.py", line 101, in train_net
+    for batch in train_loader:
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 475, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataset.py", line 272, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 233, in __getitem__
+    img = self.load(img_file[0])
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 217, in load
+    img = Image.open(filename)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+IsADirectoryError: [Errno 21] Is a directory: '/tmp2/chacotw/unet/Pytorch-UNet/data/multi-org-same-ch/imgs/4'

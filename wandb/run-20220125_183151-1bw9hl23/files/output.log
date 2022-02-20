@@ -1,0 +1,17 @@
+INFO: Starting training:
+        Epochs:          5000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/5000:   0%|                                                                                                                    | 0/3 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train-single.py", line 216, in <module>
+    amp=args.amp)
+  File "train-single.py", line 99, in train_net
+    f'Network has been defined with {net.n_channels} input channels, ' \
+AssertionError: Network has been defined with 1 input channels, but loaded images have 3 channels. Please check that the images are loaded correctly.

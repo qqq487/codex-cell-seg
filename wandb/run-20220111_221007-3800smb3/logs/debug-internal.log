@@ -1,0 +1,177 @@
+2022-01-11 22:10:08,475 INFO    MainThread:10575 [internal.py:wandb_internal():90] W&B internal server running at pid: 10575, started at: 2022-01-11 22:10:08.475324
+2022-01-11 22:10:08,478 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: check_version
+2022-01-11 22:10:08,478 INFO    WriterThread:10575 [datastore.py:open_for_write():77] open: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/run-3800smb3.wandb
+2022-01-11 22:10:08,484 DEBUG   SenderThread:10575 [sender.py:send():234] send: header
+2022-01-11 22:10:08,484 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: check_version
+2022-01-11 22:10:08,867 DEBUG   SenderThread:10575 [sender.py:send():234] send: run
+2022-01-11 22:10:08,871 INFO    SenderThread:10575 [sender.py:_maybe_setup_resume():485] checking resume status for None/U-Net/3800smb3
+2022-01-11 22:10:10,242 INFO    SenderThread:10575 [dir_watcher.py:__init__():169] watching files in: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files
+2022-01-11 22:10:10,243 INFO    SenderThread:10575 [sender.py:_start_run_threads():807] run started: 3800smb3 with start time 1641910207
+2022-01-11 22:10:10,243 DEBUG   SenderThread:10575 [sender.py:send():234] send: summary
+2022-01-11 22:10:10,243 INFO    SenderThread:10575 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-11 22:10:10,246 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: run_start
+2022-01-11 22:10:10,262 DEBUG   HandlerThread:10575 [meta.py:__init__():40] meta init
+2022-01-11 22:10:10,262 DEBUG   HandlerThread:10575 [meta.py:__init__():54] meta init done
+2022-01-11 22:10:10,262 DEBUG   HandlerThread:10575 [meta.py:probe():214] probe
+2022-01-11 22:10:10,270 DEBUG   HandlerThread:10575 [meta.py:_setup_git():204] setup git
+2022-01-11 22:10:10,291 DEBUG   HandlerThread:10575 [meta.py:_setup_git():211] setup git done
+2022-01-11 22:10:10,291 DEBUG   HandlerThread:10575 [meta.py:_save_pip():58] save pip
+2022-01-11 22:10:10,292 DEBUG   HandlerThread:10575 [meta.py:_save_pip():72] save pip done
+2022-01-11 22:10:10,292 DEBUG   HandlerThread:10575 [meta.py:_save_conda():79] save conda
+2022-01-11 22:10:11,247 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/wandb-summary.json
+2022-01-11 22:10:11,248 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/conda-environment.yaml
+2022-01-11 22:10:11,249 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/requirements.txt
+2022-01-11 22:10:12,808 DEBUG   HandlerThread:10575 [meta.py:_save_conda():89] save conda done
+2022-01-11 22:10:12,808 DEBUG   HandlerThread:10575 [meta.py:probe():252] probe done
+2022-01-11 22:10:12,884 DEBUG   SenderThread:10575 [sender.py:send():234] send: files
+2022-01-11 22:10:12,885 INFO    SenderThread:10575 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2022-01-11 22:10:12,899 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-11 22:10:12,900 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: stop_status
+2022-01-11 22:10:13,249 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/conda-environment.yaml
+2022-01-11 22:10:13,250 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/output.log
+2022-01-11 22:10:13,250 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/wandb-metadata.json
+2022-01-11 22:10:13,358 DEBUG   SenderThread:10575 [sender.py:send():234] send: config
+2022-01-11 22:10:13,825 INFO    Thread-11 :10575 [upload_job.py:push():137] Uploaded file /tmp/tmpu5qb_73pwandb/t63u70p9-wandb-metadata.json
+2022-01-11 22:10:15,250 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/output.log
+2022-01-11 22:10:15,429 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:15,429 DEBUG   SenderThread:10575 [sender.py:send():234] send: telemetry
+2022-01-11 22:10:15,430 DEBUG   SenderThread:10575 [sender.py:send():234] send: exit
+2022-01-11 22:10:15,430 INFO    SenderThread:10575 [sender.py:send_exit():366] handling exit code: 1
+2022-01-11 22:10:15,431 INFO    SenderThread:10575 [sender.py:send_exit():368] handling runtime: 5
+2022-01-11 22:10:15,432 INFO    SenderThread:10575 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-11 22:10:15,432 INFO    SenderThread:10575 [sender.py:send_exit():374] send defer
+2022-01-11 22:10:15,432 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:15,433 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:15,434 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 0
+2022-01-11 22:10:15,434 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:15,434 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 0
+2022-01-11 22:10:15,435 INFO    SenderThread:10575 [sender.py:transition_state():387] send defer: 1
+2022-01-11 22:10:15,435 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:15,435 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 1
+2022-01-11 22:10:15,649 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:15,649 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:15,649 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 1
+2022-01-11 22:10:15,650 INFO    SenderThread:10575 [sender.py:transition_state():387] send defer: 2
+2022-01-11 22:10:15,651 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:15,651 DEBUG   SenderThread:10575 [sender.py:send():234] send: stats
+2022-01-11 22:10:15,651 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:15,652 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 2
+2022-01-11 22:10:15,653 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:15,653 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 2
+2022-01-11 22:10:15,653 INFO    SenderThread:10575 [sender.py:transition_state():387] send defer: 3
+2022-01-11 22:10:15,653 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:15,654 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 3
+2022-01-11 22:10:15,654 DEBUG   SenderThread:10575 [sender.py:send():234] send: summary
+2022-01-11 22:10:15,654 INFO    SenderThread:10575 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-11 22:10:15,655 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:15,655 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 3
+2022-01-11 22:10:15,655 INFO    SenderThread:10575 [sender.py:transition_state():387] send defer: 4
+2022-01-11 22:10:15,655 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:15,656 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 4
+2022-01-11 22:10:15,656 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:15,656 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 4
+2022-01-11 22:10:15,754 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:16,251 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/output.log
+2022-01-11 22:10:16,252 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/wandb-summary.json
+2022-01-11 22:10:16,396 INFO    SenderThread:10575 [sender.py:transition_state():387] send defer: 5
+2022-01-11 22:10:16,396 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:16,397 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:16,397 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 5
+2022-01-11 22:10:16,398 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:16,398 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 5
+2022-01-11 22:10:16,398 INFO    SenderThread:10575 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-11 22:10:16,498 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:17,252 INFO    Thread-8  :10575 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/config.yaml
+2022-01-11 22:10:17,253 INFO    SenderThread:10575 [dir_watcher.py:finish():313] scan: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files
+2022-01-11 22:10:17,254 INFO    SenderThread:10575 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/output.log output.log
+2022-01-11 22:10:17,254 INFO    SenderThread:10575 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/conda-environment.yaml conda-environment.yaml
+2022-01-11 22:10:17,255 INFO    SenderThread:10575 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/wandb-summary.json wandb-summary.json
+2022-01-11 22:10:17,255 INFO    SenderThread:10575 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/wandb-metadata.json wandb-metadata.json
+2022-01-11 22:10:17,260 INFO    SenderThread:10575 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/requirements.txt requirements.txt
+2022-01-11 22:10:17,265 INFO    SenderThread:10575 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/config.yaml config.yaml
+2022-01-11 22:10:17,283 INFO    SenderThread:10575 [sender.py:transition_state():387] send defer: 6
+2022-01-11 22:10:17,284 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:17,294 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:17,295 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 6
+2022-01-11 22:10:17,301 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:17,301 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 6
+2022-01-11 22:10:17,305 INFO    SenderThread:10575 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-11 22:10:17,394 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:17,395 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:17,497 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:17,498 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:17,600 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:17,600 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:17,703 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:17,703 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:17,806 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:17,806 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:17,909 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:17,909 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,012 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,012 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,114 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,115 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,217 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,217 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,320 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,320 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,422 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,423 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,525 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,526 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,629 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,630 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,717 INFO    Thread-16 :10575 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/config.yaml
+2022-01-11 22:10:18,732 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,733 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,835 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,836 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,917 INFO    Thread-12 :10575 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/output.log
+2022-01-11 22:10:18,938 INFO    Thread-13 :10575 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/conda-environment.yaml
+2022-01-11 22:10:18,939 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:18,939 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:18,943 INFO    Thread-15 :10575 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/requirements.txt
+2022-01-11 22:10:19,042 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:19,042 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:19,145 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:19,145 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:19,248 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:19,248 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:19,351 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:19,351 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:19,454 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:19,454 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:19,533 INFO    Thread-14 :10575 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/files/wandb-summary.json
+2022-01-11 22:10:19,557 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:19,557 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:19,660 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:19,661 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:19,735 INFO    Thread-7  :10575 [sender.py:transition_state():387] send defer: 7
+2022-01-11 22:10:19,735 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:19,736 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 7
+2022-01-11 22:10:19,736 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:19,736 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 7
+2022-01-11 22:10:19,763 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-11 22:10:20,424 WARNING MainThread:10575 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2022-01-11 22:10:23,705 INFO    SenderThread:10575 [sender.py:transition_state():387] send defer: 8
+2022-01-11 22:10:23,706 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: poll_exit
+2022-01-11 22:10:23,707 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:23,707 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 8
+2022-01-11 22:10:23,707 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:23,707 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 8
+2022-01-11 22:10:23,708 INFO    SenderThread:10575 [sender.py:transition_state():387] send defer: 9
+2022-01-11 22:10:23,709 DEBUG   SenderThread:10575 [sender.py:send():234] send: final
+2022-01-11 22:10:23,709 DEBUG   SenderThread:10575 [sender.py:send():234] send: footer
+2022-01-11 22:10:23,709 DEBUG   HandlerThread:10575 [handler.py:handle_request():130] handle_request: defer
+2022-01-11 22:10:23,710 INFO    HandlerThread:10575 [handler.py:handle_request_defer():147] handle defer: 9
+2022-01-11 22:10:23,710 DEBUG   SenderThread:10575 [sender.py:send_request():248] send_request: defer
+2022-01-11 22:10:23,710 INFO    SenderThread:10575 [sender.py:send_request_defer():383] handle sender defer: 9
+2022-01-11 22:10:26,431 WARNING MainThread:10575 [internal.py:is_dead():367] Internal process exiting, parent pid 10261 disappeared
+2022-01-11 22:10:26,431 ERROR   MainThread:10575 [internal.py:wandb_internal():142] Internal process shutdown.
+2022-01-11 22:10:26,709 INFO    WriterThread:10575 [datastore.py:close():281] close: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221007-3800smb3/run-3800smb3.wandb
+2022-01-11 22:10:26,711 INFO    SenderThread:10575 [sender.py:finish():1070] shutting down sender
+2022-01-11 22:10:26,711 INFO    SenderThread:10575 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-11 22:10:26,711 INFO    SenderThread:10575 [file_pusher.py:join():182] waiting for file pusher
+2022-01-11 22:10:26,713 INFO    HandlerThread:10575 [handler.py:finish():731] shutting down handler
+2022-01-11 22:10:26,714 INFO    MainThread:10575 [internal.py:handle_exit():77] Internal process exited

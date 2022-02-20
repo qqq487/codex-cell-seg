@@ -1,0 +1,49 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                                        | 0/4 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 197, in <module>
+    amp=args.amp)
+  File "train.py", line 85, in train_net
+    for batch in train_loader:
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/dataset.py", line 311, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 141, in __getitem__
+    sample = train_tfm(sample)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 60, in __call__
+    img = t(img)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 518, in __call__
+    return t(img)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 614, in forward
+    width, height = F._get_image_size(img)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 67, in _get_image_size
+    return F_pil._get_image_size(img)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torchvision/transforms/functional_pil.py", line 26, in _get_image_size
+    raise TypeError("Unexpected type {}".format(type(img)))
+TypeError: Unexpected type <class 'dict'>

@@ -1,0 +1,33 @@
+2022-01-23 16:17:41,584 INFO    MainThread:12093 [wandb_setup.py:_flush():71] setting env: {}
+2022-01-23 16:17:41,584 INFO    MainThread:12093 [wandb_setup.py:_flush():71] setting login settings: {'anonymous': 'must'}
+2022-01-23 16:17:41,584 INFO    MainThread:12093 [wandb_init.py:_log_setup():371] Logging user logs to /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220123_161741-2e034juo/logs/debug.log
+2022-01-23 16:17:41,584 INFO    MainThread:12093 [wandb_init.py:_log_setup():372] Logging internal logs to /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220123_161741-2e034juo/logs/debug-internal.log
+2022-01-23 16:17:41,584 INFO    MainThread:12093 [wandb_init.py:init():404] calling init triggers
+2022-01-23 16:17:41,584 INFO    MainThread:12093 [wandb_init.py:init():411] wandb.init called with sweep_config: {}
+config: {}
+2022-01-23 16:17:41,585 INFO    MainThread:12093 [wandb_init.py:init():460] starting backend
+2022-01-23 16:17:41,585 INFO    MainThread:12093 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-01-23 16:17:41,621 INFO    MainThread:12093 [backend.py:ensure_launched():216] starting backend process...
+2022-01-23 16:17:41,649 INFO    MainThread:12093 [backend.py:ensure_launched():222] started backend process with pid: 12210
+2022-01-23 16:17:41,651 INFO    MainThread:12093 [wandb_init.py:init():469] backend started and connected
+2022-01-23 16:17:41,656 INFO    MainThread:12093 [wandb_init.py:init():533] updated telemetry
+2022-01-23 16:17:41,730 INFO    MainThread:12093 [wandb_init.py:init():563] communicating current version
+2022-01-23 16:17:42,366 WARNING MainThread:12093 [wandb_init.py:init():952] interrupted
+Traceback (most recent call last):
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 931, in init
+    run = wi.init()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 565, in init
+    current_version=wandb.__version__
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 92, in communicate_check_version
+    ret = self._communicate_check_version(check_version)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 413, in _communicate_check_version
+    result = self._communicate(rec)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 213, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/threading.py", line 551, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/threading.py", line 299, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

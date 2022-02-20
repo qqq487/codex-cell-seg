@@ -1,0 +1,471 @@
+2022-01-13 15:52:28,714 INFO    MainThread:33847 [internal.py:wandb_internal():90] W&B internal server running at pid: 33847, started at: 2022-01-13 15:52:28.714578
+2022-01-13 15:52:28,718 INFO    WriterThread:33847 [datastore.py:open_for_write():77] open: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/run-3qqc85vb.wandb
+2022-01-13 15:52:28,720 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: check_version
+2022-01-13 15:52:28,727 DEBUG   SenderThread:33847 [sender.py:send():234] send: header
+2022-01-13 15:52:28,727 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: check_version
+2022-01-13 15:52:28,909 DEBUG   SenderThread:33847 [sender.py:send():234] send: run
+2022-01-13 15:52:28,912 INFO    SenderThread:33847 [sender.py:_maybe_setup_resume():485] checking resume status for None/U-Net/3qqc85vb
+2022-01-13 15:52:29,421 INFO    SenderThread:33847 [dir_watcher.py:__init__():169] watching files in: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files
+2022-01-13 15:52:29,421 INFO    SenderThread:33847 [sender.py:_start_run_threads():807] run started: 3qqc85vb with start time 1642060346
+2022-01-13 15:52:29,421 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:29,422 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:29,427 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: run_start
+2022-01-13 15:52:29,444 DEBUG   HandlerThread:33847 [meta.py:__init__():40] meta init
+2022-01-13 15:52:29,444 DEBUG   HandlerThread:33847 [meta.py:__init__():54] meta init done
+2022-01-13 15:52:29,444 DEBUG   HandlerThread:33847 [meta.py:probe():214] probe
+2022-01-13 15:52:29,452 DEBUG   HandlerThread:33847 [meta.py:_setup_git():204] setup git
+2022-01-13 15:52:29,479 DEBUG   HandlerThread:33847 [meta.py:_setup_git():211] setup git done
+2022-01-13 15:52:29,479 DEBUG   HandlerThread:33847 [meta.py:_save_pip():58] save pip
+2022-01-13 15:52:29,480 DEBUG   HandlerThread:33847 [meta.py:_save_pip():72] save pip done
+2022-01-13 15:52:29,481 DEBUG   HandlerThread:33847 [meta.py:_save_conda():79] save conda
+2022-01-13 15:52:30,426 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/conda-environment.yaml
+2022-01-13 15:52:30,427 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/requirements.txt
+2022-01-13 15:52:30,427 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:34,251 DEBUG   HandlerThread:33847 [meta.py:_save_conda():89] save conda done
+2022-01-13 15:52:34,251 DEBUG   HandlerThread:33847 [meta.py:probe():252] probe done
+2022-01-13 15:52:34,430 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/conda-environment.yaml
+2022-01-13 15:52:34,433 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-metadata.json
+2022-01-13 15:52:34,498 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-13 15:52:34,498 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:34,499 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2022-01-13 15:52:34,500 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: stop_status
+2022-01-13 15:52:34,712 DEBUG   SenderThread:33847 [sender.py:send():234] send: config
+2022-01-13 15:52:34,853 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:34,854 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:34,858 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:35,118 INFO    Thread-11 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/38eayr6w-wandb-metadata.json
+2022-01-13 15:52:35,326 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:35,326 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_1_06a53ccf084cad432391.png with policy now
+2022-01-13 15:52:35,326 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:35,327 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_1_ef882ed59be9039500a8.png with policy now
+2022-01-13 15:52:35,327 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:35,327 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_1_d73a4ddaa6d637a6f60a.png with policy now
+2022-01-13 15:52:35,352 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:35,383 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:35,406 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:35,430 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:35,430 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/output.log
+2022-01-13 15:52:35,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_1_d73a4ddaa6d637a6f60a.png
+2022-01-13 15:52:35,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_1_06a53ccf084cad432391.png
+2022-01-13 15:52:35,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_1_ef882ed59be9039500a8.png
+2022-01-13 15:52:35,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media
+2022-01-13 15:52:35,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images
+2022-01-13 15:52:35,452 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:35,459 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:35,479 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:35,846 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:35,847 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_3_d0a77accd6c2fe6684c7.png with policy now
+2022-01-13 15:52:35,847 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:35,848 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_3_dd2d8ed32ec8f98275e5.png with policy now
+2022-01-13 15:52:35,848 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:35,848 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_3_0bdf79789140cb8b8386.png with policy now
+2022-01-13 15:52:35,865 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:35,902 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:35,916 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:35,938 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:35,941 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:35,955 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:35,967 INFO    Thread-12 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2ythkm1r-media/images/images_1_06a53ccf084cad432391.png
+2022-01-13 15:52:35,970 INFO    Thread-14 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/21izf4ye-media/images/pred_1_d73a4ddaa6d637a6f60a.png
+2022-01-13 15:52:35,981 INFO    Thread-13 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2nzby5be-media/images/true_1_ef882ed59be9039500a8.png
+2022-01-13 15:52:36,313 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:36,314 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_5_bb86a6a47c4c2197668f.png with policy now
+2022-01-13 15:52:36,314 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:36,314 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_5_631172647d98730118d7.png with policy now
+2022-01-13 15:52:36,315 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:36,315 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_5_c881c29534560c10c58f.png with policy now
+2022-01-13 15:52:36,338 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:36,371 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:36,386 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:36,400 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:36,407 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:36,423 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:36,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:36,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_5_bb86a6a47c4c2197668f.png
+2022-01-13 15:52:36,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_5_631172647d98730118d7.png
+2022-01-13 15:52:36,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_3_d0a77accd6c2fe6684c7.png
+2022-01-13 15:52:36,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_5_c881c29534560c10c58f.png
+2022-01-13 15:52:36,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_3_dd2d8ed32ec8f98275e5.png
+2022-01-13 15:52:36,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_3_0bdf79789140cb8b8386.png
+2022-01-13 15:52:36,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images
+2022-01-13 15:52:36,456 INFO    Thread-16 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/eboqikc4-media/images/true_3_dd2d8ed32ec8f98275e5.png
+2022-01-13 15:52:36,483 INFO    Thread-17 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/23prsk5g-media/images/pred_3_0bdf79789140cb8b8386.png
+2022-01-13 15:52:36,566 INFO    Thread-15 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/kjispjht-media/images/images_3_d0a77accd6c2fe6684c7.png
+2022-01-13 15:52:36,780 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:36,781 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_7_5eba5cc298cd85f601c8.png with policy now
+2022-01-13 15:52:36,781 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:36,782 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_7_e24585955265ef826153.png with policy now
+2022-01-13 15:52:36,782 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:36,782 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_7_9f3c2ba1e78a027ff141.png with policy now
+2022-01-13 15:52:36,806 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:36,839 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:36,853 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:36,867 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:36,875 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:36,902 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:36,920 INFO    Thread-18 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/f8l0f14y-media/images/images_5_bb86a6a47c4c2197668f.png
+2022-01-13 15:52:36,932 INFO    Thread-19 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/3941od9r-media/images/true_5_631172647d98730118d7.png
+2022-01-13 15:52:36,981 INFO    Thread-20 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/34d97640-media/images/pred_5_c881c29534560c10c58f.png
+2022-01-13 15:52:37,247 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:37,247 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_9_46f0e917861832bb8e79.png with policy now
+2022-01-13 15:52:37,248 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:37,248 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_9_0bdf79789140cb8b8386.png with policy now
+2022-01-13 15:52:37,249 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:37,249 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_9_411b650d660d06ef7fdf.png with policy now
+2022-01-13 15:52:37,276 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:37,312 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:37,326 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:37,347 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:37,354 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:37,374 INFO    Thread-21 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/1l71f4gc-media/images/images_7_5eba5cc298cd85f601c8.png
+2022-01-13 15:52:37,374 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:37,431 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/output.log
+2022-01-13 15:52:37,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:37,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_9_411b650d660d06ef7fdf.png
+2022-01-13 15:52:37,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_9_0bdf79789140cb8b8386.png
+2022-01-13 15:52:37,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_7_9f3c2ba1e78a027ff141.png
+2022-01-13 15:52:37,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_9_46f0e917861832bb8e79.png
+2022-01-13 15:52:37,432 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_7_5eba5cc298cd85f601c8.png
+2022-01-13 15:52:37,433 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_7_e24585955265ef826153.png
+2022-01-13 15:52:37,433 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images
+2022-01-13 15:52:37,458 INFO    Thread-23 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/3f7byr9o-media/images/pred_7_9f3c2ba1e78a027ff141.png
+2022-01-13 15:52:37,531 INFO    Thread-22 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/117p3sii-media/images/true_7_e24585955265ef826153.png
+2022-01-13 15:52:37,787 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:37,788 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_11_712c5c8f49920f58e3fd.png with policy now
+2022-01-13 15:52:37,789 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:37,789 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_11_0502961381ac9b21832c.png with policy now
+2022-01-13 15:52:37,790 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:37,790 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_11_ae9eef5530c3e58fb521.png with policy now
+2022-01-13 15:52:37,812 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:37,848 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:37,862 INFO    Thread-25 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/sv9olghk-media/images/true_9_0bdf79789140cb8b8386.png
+2022-01-13 15:52:37,863 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:37,871 INFO    Thread-24 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/1uqjkupf-media/images/images_9_46f0e917861832bb8e79.png
+2022-01-13 15:52:37,887 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:37,894 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:37,902 INFO    Thread-26 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/151ugfb8-media/images/pred_9_411b650d660d06ef7fdf.png
+2022-01-13 15:52:37,913 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:38,289 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:38,289 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_13_3cdeb718848829083bc4.png with policy now
+2022-01-13 15:52:38,290 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:38,290 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_13_ee5a868f801c8064cacb.png with policy now
+2022-01-13 15:52:38,291 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:38,291 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_13_d2a77affec995d3c7da3.png with policy now
+2022-01-13 15:52:38,303 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:38,346 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:38,361 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:38,375 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:38,383 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:38,401 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:38,433 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:38,433 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_11_712c5c8f49920f58e3fd.png
+2022-01-13 15:52:38,433 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_13_3cdeb718848829083bc4.png
+2022-01-13 15:52:38,433 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_13_d2a77affec995d3c7da3.png
+2022-01-13 15:52:38,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_13_ee5a868f801c8064cacb.png
+2022-01-13 15:52:38,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_11_0502961381ac9b21832c.png
+2022-01-13 15:52:38,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_11_ae9eef5530c3e58fb521.png
+2022-01-13 15:52:38,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images
+2022-01-13 15:52:38,571 INFO    Thread-29 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/z1k68zhi-media/images/pred_11_ae9eef5530c3e58fb521.png
+2022-01-13 15:52:38,655 INFO    Thread-27 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/1w9gk2it-media/images/images_11_712c5c8f49920f58e3fd.png
+2022-01-13 15:52:38,777 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:38,777 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_15_f632b45b505f0b06d8e3.png with policy now
+2022-01-13 15:52:38,781 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:38,781 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_15_fc59e895cbfc70e85953.png with policy now
+2022-01-13 15:52:38,797 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:38,798 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_15_b2647da980b0be240f32.png with policy now
+2022-01-13 15:52:38,798 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:38,838 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:38,852 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:38,867 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:38,875 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:38,907 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:38,931 INFO    Thread-32 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/1txptezj-media/images/pred_13_d2a77affec995d3c7da3.png
+2022-01-13 15:52:38,958 INFO    Thread-30 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/61ize0hm-media/images/images_13_3cdeb718848829083bc4.png
+2022-01-13 15:52:39,147 INFO    Thread-31 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/1zen0jb9-media/images/true_13_ee5a868f801c8064cacb.png
+2022-01-13 15:52:39,252 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:39,252 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_17_e047966b6a689061c416.png with policy now
+2022-01-13 15:52:39,253 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:39,253 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_17_2c5a37335b34e0620753.png with policy now
+2022-01-13 15:52:39,255 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:39,255 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_17_ec20c12d15f0a6abf53c.png with policy now
+2022-01-13 15:52:39,271 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:39,315 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:39,347 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:39,355 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:39,359 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:39,387 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:39,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/output.log
+2022-01-13 15:52:39,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:39,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_17_2c5a37335b34e0620753.png
+2022-01-13 15:52:39,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_17_e047966b6a689061c416.png
+2022-01-13 15:52:39,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_15_f632b45b505f0b06d8e3.png
+2022-01-13 15:52:39,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_17_ec20c12d15f0a6abf53c.png
+2022-01-13 15:52:39,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_15_fc59e895cbfc70e85953.png
+2022-01-13 15:52:39,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_15_b2647da980b0be240f32.png
+2022-01-13 15:52:39,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images
+2022-01-13 15:52:39,470 INFO    Thread-34 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/r1mpgart-media/images/true_15_fc59e895cbfc70e85953.png
+2022-01-13 15:52:39,479 INFO    Thread-35 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/1ahv8wmm-media/images/pred_15_b2647da980b0be240f32.png
+2022-01-13 15:52:39,714 INFO    Thread-33 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/1mw5b31o-media/images/images_15_f632b45b505f0b06d8e3.png
+2022-01-13 15:52:39,719 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:39,720 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_19_c08ba5d091a84bb27ab6.png with policy now
+2022-01-13 15:52:39,721 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:39,721 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_19_ea710abf3d23fc4ffa05.png with policy now
+2022-01-13 15:52:39,722 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:39,727 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_19_9ed23bdcbfbf1dda703e.png with policy now
+2022-01-13 15:52:39,764 INFO    Thread-28 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/6cwba2sr-media/images/true_11_0502961381ac9b21832c.png
+2022-01-13 15:52:39,771 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:39,787 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:39,801 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:39,811 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:39,819 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:39,836 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:39,913 INFO    Thread-37 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2p04ekzd-media/images/true_17_2c5a37335b34e0620753.png
+2022-01-13 15:52:39,918 INFO    Thread-36 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2qfocnep-media/images/images_17_e047966b6a689061c416.png
+2022-01-13 15:52:39,984 INFO    Thread-38 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2iuahuy3-media/images/pred_17_ec20c12d15f0a6abf53c.png
+2022-01-13 15:52:40,189 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:40,190 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_21_09d8b5a0866f0af956d3.png with policy now
+2022-01-13 15:52:40,191 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:40,191 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_21_11f914af4c23c836eef4.png with policy now
+2022-01-13 15:52:40,192 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:40,192 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_21_f1244433131da15ab944.png with policy now
+2022-01-13 15:52:40,227 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:40,247 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:40,267 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:40,285 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:40,286 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:40,305 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:40,362 INFO    Thread-41 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/ic2fw32r-media/images/pred_19_9ed23bdcbfbf1dda703e.png
+2022-01-13 15:52:40,430 INFO    Thread-39 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/f1ns9d97-media/images/images_19_c08ba5d091a84bb27ab6.png
+2022-01-13 15:52:40,434 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:40,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_19_ea710abf3d23fc4ffa05.png
+2022-01-13 15:52:40,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_21_11f914af4c23c836eef4.png
+2022-01-13 15:52:40,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_21_09d8b5a0866f0af956d3.png
+2022-01-13 15:52:40,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_19_9ed23bdcbfbf1dda703e.png
+2022-01-13 15:52:40,435 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_19_c08ba5d091a84bb27ab6.png
+2022-01-13 15:52:40,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_21_f1244433131da15ab944.png
+2022-01-13 15:52:40,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images
+2022-01-13 15:52:40,441 INFO    Thread-40 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/26yxfdw9-media/images/true_19_ea710abf3d23fc4ffa05.png
+2022-01-13 15:52:40,664 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:40,664 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_23_b6556f5a2b8e27678c24.png with policy now
+2022-01-13 15:52:40,665 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:40,665 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_23_097c6cd9254dd00abbfa.png with policy now
+2022-01-13 15:52:40,666 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:40,667 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_23_f07386b986f6fb9c88e8.png with policy now
+2022-01-13 15:52:40,685 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:40,724 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:40,738 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:40,756 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:40,764 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:40,783 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:40,794 INFO    Thread-42 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2tiibaml-media/images/images_21_09d8b5a0866f0af956d3.png
+2022-01-13 15:52:40,886 INFO    Thread-44 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2aypn4vq-media/images/pred_21_f1244433131da15ab944.png
+2022-01-13 15:52:40,940 INFO    Thread-43 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/3s88brkb-media/images/true_21_11f914af4c23c836eef4.png
+2022-01-13 15:52:41,144 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:41,144 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_25_c0ea647c073e41f27e44.png with policy now
+2022-01-13 15:52:41,146 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:41,146 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_25_a9f4d04735cdd0c6782a.png with policy now
+2022-01-13 15:52:41,147 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:41,147 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_25_b74b513cf5b0f9cbe6ef.png with policy now
+2022-01-13 15:52:41,189 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:41,209 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:41,223 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:41,230 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:41,238 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:41,260 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:41,311 INFO    Thread-46 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2bah5tb0-media/images/true_23_097c6cd9254dd00abbfa.png
+2022-01-13 15:52:41,334 INFO    Thread-47 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/17xe3eo5-media/images/pred_23_f07386b986f6fb9c88e8.png
+2022-01-13 15:52:41,338 INFO    Thread-45 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2kt2g58k-media/images/images_23_b6556f5a2b8e27678c24.png
+2022-01-13 15:52:41,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/output.log
+2022-01-13 15:52:41,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:41,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_23_097c6cd9254dd00abbfa.png
+2022-01-13 15:52:41,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_23_b6556f5a2b8e27678c24.png
+2022-01-13 15:52:41,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_25_c0ea647c073e41f27e44.png
+2022-01-13 15:52:41,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_23_f07386b986f6fb9c88e8.png
+2022-01-13 15:52:41,436 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_25_b74b513cf5b0f9cbe6ef.png
+2022-01-13 15:52:41,437 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_25_a9f4d04735cdd0c6782a.png
+2022-01-13 15:52:41,437 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images
+2022-01-13 15:52:41,604 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:41,604 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/images_27_8b1b90a4c680dec26f4c.png with policy now
+2022-01-13 15:52:41,605 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:41,605 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/true_27_e8d75f067e1ad3684928.png with policy now
+2022-01-13 15:52:41,607 DEBUG   SenderThread:33847 [sender.py:send():234] send: files
+2022-01-13 15:52:41,607 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file media/images/pred_27_bbb896d4444318b99783.png with policy now
+2022-01-13 15:52:41,631 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:41,664 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:41,695 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:41,696 DEBUG   SenderThread:33847 [sender.py:send():234] send: history
+2022-01-13 15:52:41,696 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:41,717 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:41,778 INFO    Thread-50 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/3egaonzp-media/images/pred_25_b74b513cf5b0f9cbe6ef.png
+2022-01-13 15:52:41,793 INFO    Thread-49 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/se50qwa0-media/images/true_25_a9f4d04735cdd0c6782a.png
+2022-01-13 15:52:41,857 INFO    Thread-48 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/97z0y2dm-media/images/images_25_c0ea647c073e41f27e44.png
+2022-01-13 15:52:42,348 INFO    Thread-53 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/1nh2brrz-media/images/pred_27_bbb896d4444318b99783.png
+2022-01-13 15:52:42,352 INFO    Thread-52 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2gx9h1dm-media/images/true_27_e8d75f067e1ad3684928.png
+2022-01-13 15:52:42,437 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:42,438 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_27_8b1b90a4c680dec26f4c.png
+2022-01-13 15:52:42,438 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_27_bbb896d4444318b99783.png
+2022-01-13 15:52:42,438 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_27_e8d75f067e1ad3684928.png
+2022-01-13 15:52:42,439 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images
+2022-01-13 15:52:43,439 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/output.log
+2022-01-13 15:52:44,103 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:44,103 DEBUG   SenderThread:33847 [sender.py:send():234] send: telemetry
+2022-01-13 15:52:44,104 DEBUG   SenderThread:33847 [sender.py:send():234] send: exit
+2022-01-13 15:52:44,104 INFO    SenderThread:33847 [sender.py:send_exit():366] handling exit code: 1
+2022-01-13 15:52:44,107 INFO    SenderThread:33847 [sender.py:send_exit():368] handling runtime: 14
+2022-01-13 15:52:44,136 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:44,137 INFO    SenderThread:33847 [sender.py:send_exit():374] send defer
+2022-01-13 15:52:44,137 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:44,138 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:44,138 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 0
+2022-01-13 15:52:44,139 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:44,139 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 0
+2022-01-13 15:52:44,139 INFO    SenderThread:33847 [sender.py:transition_state():387] send defer: 1
+2022-01-13 15:52:44,139 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:44,140 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 1
+2022-01-13 15:52:44,298 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:44,298 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 1
+2022-01-13 15:52:44,298 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:44,298 INFO    SenderThread:33847 [sender.py:transition_state():387] send defer: 2
+2022-01-13 15:52:44,300 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:44,300 DEBUG   SenderThread:33847 [sender.py:send():234] send: stats
+2022-01-13 15:52:44,300 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:44,302 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 2
+2022-01-13 15:52:44,302 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:44,302 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 2
+2022-01-13 15:52:44,303 INFO    SenderThread:33847 [sender.py:transition_state():387] send defer: 3
+2022-01-13 15:52:44,303 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:44,303 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 3
+2022-01-13 15:52:44,316 DEBUG   SenderThread:33847 [sender.py:send():234] send: summary
+2022-01-13 15:52:44,338 INFO    SenderThread:33847 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-13 15:52:44,338 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:44,338 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 3
+2022-01-13 15:52:44,338 INFO    SenderThread:33847 [sender.py:transition_state():387] send defer: 4
+2022-01-13 15:52:44,338 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:44,339 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 4
+2022-01-13 15:52:44,339 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:44,339 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 4
+2022-01-13 15:52:44,403 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:44,440 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/output.log
+2022-01-13 15:52:44,441 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:44,493 INFO    Thread-51 :33847 [upload_job.py:push():137] Uploaded file /tmp/tmpgdju2z0zwandb/2kc3ojt2-media/images/images_27_8b1b90a4c680dec26f4c.png
+2022-01-13 15:52:44,569 INFO    SenderThread:33847 [sender.py:transition_state():387] send defer: 5
+2022-01-13 15:52:44,570 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:44,570 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:44,571 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 5
+2022-01-13 15:52:44,571 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:44,571 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 5
+2022-01-13 15:52:44,571 INFO    SenderThread:33847 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-13 15:52:44,672 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:45,442 INFO    Thread-8  :33847 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/config.yaml
+2022-01-13 15:52:45,445 INFO    SenderThread:33847 [dir_watcher.py:finish():313] scan: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files
+2022-01-13 15:52:45,446 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/output.log output.log
+2022-01-13 15:52:45,446 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/conda-environment.yaml conda-environment.yaml
+2022-01-13 15:52:45,446 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json wandb-summary.json
+2022-01-13 15:52:45,462 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-metadata.json wandb-metadata.json
+2022-01-13 15:52:45,463 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/requirements.txt requirements.txt
+2022-01-13 15:52:45,472 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/config.yaml config.yaml
+2022-01-13 15:52:45,493 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_9_46f0e917861832bb8e79.png media/images/images_9_46f0e917861832bb8e79.png
+2022-01-13 15:52:45,493 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_9_411b650d660d06ef7fdf.png media/images/pred_9_411b650d660d06ef7fdf.png
+2022-01-13 15:52:45,493 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_17_ec20c12d15f0a6abf53c.png media/images/pred_17_ec20c12d15f0a6abf53c.png
+2022-01-13 15:52:45,493 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_13_ee5a868f801c8064cacb.png media/images/true_13_ee5a868f801c8064cacb.png
+2022-01-13 15:52:45,494 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_15_b2647da980b0be240f32.png media/images/pred_15_b2647da980b0be240f32.png
+2022-01-13 15:52:45,494 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_23_b6556f5a2b8e27678c24.png media/images/images_23_b6556f5a2b8e27678c24.png
+2022-01-13 15:52:45,496 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_3_0bdf79789140cb8b8386.png media/images/pred_3_0bdf79789140cb8b8386.png
+2022-01-13 15:52:45,496 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_15_fc59e895cbfc70e85953.png media/images/true_15_fc59e895cbfc70e85953.png
+2022-01-13 15:52:45,496 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_5_c881c29534560c10c58f.png media/images/pred_5_c881c29534560c10c58f.png
+2022-01-13 15:52:45,497 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_11_0502961381ac9b21832c.png media/images/true_11_0502961381ac9b21832c.png
+2022-01-13 15:52:45,497 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_7_9f3c2ba1e78a027ff141.png media/images/pred_7_9f3c2ba1e78a027ff141.png
+2022-01-13 15:52:45,497 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_7_e24585955265ef826153.png media/images/true_7_e24585955265ef826153.png
+2022-01-13 15:52:45,498 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_25_a9f4d04735cdd0c6782a.png media/images/true_25_a9f4d04735cdd0c6782a.png
+2022-01-13 15:52:45,498 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_19_c08ba5d091a84bb27ab6.png media/images/images_19_c08ba5d091a84bb27ab6.png
+2022-01-13 15:52:45,498 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_27_e8d75f067e1ad3684928.png media/images/true_27_e8d75f067e1ad3684928.png
+2022-01-13 15:52:45,498 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_17_e047966b6a689061c416.png media/images/images_17_e047966b6a689061c416.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_5_631172647d98730118d7.png media/images/true_5_631172647d98730118d7.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_7_5eba5cc298cd85f601c8.png media/images/images_7_5eba5cc298cd85f601c8.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_9_0bdf79789140cb8b8386.png media/images/true_9_0bdf79789140cb8b8386.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_13_3cdeb718848829083bc4.png media/images/images_13_3cdeb718848829083bc4.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_27_8b1b90a4c680dec26f4c.png media/images/images_27_8b1b90a4c680dec26f4c.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_11_ae9eef5530c3e58fb521.png media/images/pred_11_ae9eef5530c3e58fb521.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_17_2c5a37335b34e0620753.png media/images/true_17_2c5a37335b34e0620753.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_1_ef882ed59be9039500a8.png media/images/true_1_ef882ed59be9039500a8.png
+2022-01-13 15:52:45,499 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_15_f632b45b505f0b06d8e3.png media/images/images_15_f632b45b505f0b06d8e3.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_3_dd2d8ed32ec8f98275e5.png media/images/true_3_dd2d8ed32ec8f98275e5.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_19_9ed23bdcbfbf1dda703e.png media/images/pred_19_9ed23bdcbfbf1dda703e.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_1_06a53ccf084cad432391.png media/images/images_1_06a53ccf084cad432391.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_21_09d8b5a0866f0af956d3.png media/images/images_21_09d8b5a0866f0af956d3.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_11_712c5c8f49920f58e3fd.png media/images/images_11_712c5c8f49920f58e3fd.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_21_11f914af4c23c836eef4.png media/images/true_21_11f914af4c23c836eef4.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_13_d2a77affec995d3c7da3.png media/images/pred_13_d2a77affec995d3c7da3.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_1_d73a4ddaa6d637a6f60a.png media/images/pred_1_d73a4ddaa6d637a6f60a.png
+2022-01-13 15:52:45,500 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_5_bb86a6a47c4c2197668f.png media/images/images_5_bb86a6a47c4c2197668f.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_25_b74b513cf5b0f9cbe6ef.png media/images/pred_25_b74b513cf5b0f9cbe6ef.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_25_c0ea647c073e41f27e44.png media/images/images_25_c0ea647c073e41f27e44.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_21_f1244433131da15ab944.png media/images/pred_21_f1244433131da15ab944.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_19_ea710abf3d23fc4ffa05.png media/images/true_19_ea710abf3d23fc4ffa05.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_27_bbb896d4444318b99783.png media/images/pred_27_bbb896d4444318b99783.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/true_23_097c6cd9254dd00abbfa.png media/images/true_23_097c6cd9254dd00abbfa.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/pred_23_f07386b986f6fb9c88e8.png media/images/pred_23_f07386b986f6fb9c88e8.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/media/images/images_3_d0a77accd6c2fe6684c7.png media/images/images_3_d0a77accd6c2fe6684c7.png
+2022-01-13 15:52:45,501 INFO    SenderThread:33847 [sender.py:transition_state():387] send defer: 6
+2022-01-13 15:52:45,502 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:45,503 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:45,503 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 6
+2022-01-13 15:52:45,503 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:45,503 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 6
+2022-01-13 15:52:45,504 INFO    SenderThread:33847 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-13 15:52:45,604 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:45,605 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:45,716 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:45,716 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:45,819 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:45,819 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:45,921 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:45,922 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:46,024 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:46,025 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:46,050 INFO    Thread-55 :33847 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/conda-environment.yaml
+2022-01-13 15:52:46,080 INFO    Thread-58 :33847 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/config.yaml
+2022-01-13 15:52:46,087 INFO    Thread-54 :33847 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/output.log
+2022-01-13 15:52:46,105 INFO    Thread-57 :33847 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/requirements.txt
+2022-01-13 15:52:46,127 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:46,127 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:46,230 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:46,230 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:46,332 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:46,333 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:46,347 INFO    Thread-56 :33847 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/files/wandb-summary.json
+2022-01-13 15:52:46,435 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:46,436 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:46,538 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:46,539 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:46,549 INFO    Thread-7  :33847 [sender.py:transition_state():387] send defer: 7
+2022-01-13 15:52:46,549 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:46,549 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 7
+2022-01-13 15:52:46,550 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:46,550 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 7
+2022-01-13 15:52:46,641 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:47,316 INFO    SenderThread:33847 [sender.py:transition_state():387] send defer: 8
+2022-01-13 15:52:47,317 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:47,318 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:47,318 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 8
+2022-01-13 15:52:47,319 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:47,319 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 8
+2022-01-13 15:52:47,319 INFO    SenderThread:33847 [sender.py:transition_state():387] send defer: 9
+2022-01-13 15:52:47,320 DEBUG   SenderThread:33847 [sender.py:send():234] send: final
+2022-01-13 15:52:47,321 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 15:52:47,321 DEBUG   SenderThread:33847 [sender.py:send():234] send: footer
+2022-01-13 15:52:47,321 INFO    HandlerThread:33847 [handler.py:handle_request_defer():147] handle defer: 9
+2022-01-13 15:52:47,322 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: defer
+2022-01-13 15:52:47,322 INFO    SenderThread:33847 [sender.py:send_request_defer():383] handle sender defer: 9
+2022-01-13 15:52:47,420 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 15:52:47,420 DEBUG   SenderThread:33847 [sender.py:send_request():248] send_request: poll_exit
+2022-01-13 15:52:47,420 INFO    SenderThread:33847 [file_pusher.py:join():182] waiting for file pusher
+2022-01-13 15:52:47,822 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: get_summary
+2022-01-13 15:52:47,854 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: sampled_history
+2022-01-13 15:52:47,856 DEBUG   HandlerThread:33847 [handler.py:handle_request():130] handle_request: shutdown
+2022-01-13 15:52:47,857 INFO    HandlerThread:33847 [handler.py:finish():731] shutting down handler
+2022-01-13 15:52:48,321 INFO    WriterThread:33847 [datastore.py:close():281] close: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220113_155226-3qqc85vb/run-3qqc85vb.wandb
+2022-01-13 15:52:48,820 INFO    SenderThread:33847 [sender.py:finish():1070] shutting down sender
+2022-01-13 15:52:48,820 INFO    SenderThread:33847 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-13 15:52:48,820 INFO    SenderThread:33847 [file_pusher.py:join():182] waiting for file pusher
+2022-01-13 15:52:48,832 INFO    MainThread:33847 [internal.py:handle_exit():77] Internal process exited

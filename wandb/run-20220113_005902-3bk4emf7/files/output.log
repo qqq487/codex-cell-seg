@@ -1,0 +1,21 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                                                                                         | 0/3 [00:01<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 208, in <module>
+    amp=args.amp)
+  File "train.py", line 108, in train_net
+    masks_pred = net(images)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/unet/unetplusplus.py", line 125, in forward
+    x3_1 = self.conv3_1(torch.cat([x3_0, self.up(x4_0)], 1))
+RuntimeError: Sizes of tensors must match except in dimension 2. Got 24 and 25 (The offending index is 0)

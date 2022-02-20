@@ -1,0 +1,288 @@
+2022-01-12 02:33:23,502 INFO    MainThread:9505 [internal.py:wandb_internal():90] W&B internal server running at pid: 9505, started at: 2022-01-12 02:33:23.502065
+2022-01-12 02:33:23,505 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: check_version
+2022-01-12 02:33:23,505 INFO    WriterThread:9505 [datastore.py:open_for_write():77] open: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/run-1d4iauqp.wandb
+2022-01-12 02:33:23,510 DEBUG   SenderThread:9505 [sender.py:send():234] send: header
+2022-01-12 02:33:23,510 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: check_version
+2022-01-12 02:33:23,688 DEBUG   SenderThread:9505 [sender.py:send():234] send: run
+2022-01-12 02:33:23,691 INFO    SenderThread:9505 [sender.py:_maybe_setup_resume():485] checking resume status for None/U-Net/1d4iauqp
+2022-01-12 02:33:24,323 INFO    SenderThread:9505 [dir_watcher.py:__init__():169] watching files in: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files
+2022-01-12 02:33:24,324 INFO    SenderThread:9505 [sender.py:_start_run_threads():807] run started: 1d4iauqp with start time 1641926002
+2022-01-12 02:33:24,324 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:24,324 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:24,328 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: run_start
+2022-01-12 02:33:24,344 DEBUG   HandlerThread:9505 [meta.py:__init__():40] meta init
+2022-01-12 02:33:24,344 DEBUG   HandlerThread:9505 [meta.py:__init__():54] meta init done
+2022-01-12 02:33:24,344 DEBUG   HandlerThread:9505 [meta.py:probe():214] probe
+2022-01-12 02:33:24,352 DEBUG   HandlerThread:9505 [meta.py:_setup_git():204] setup git
+2022-01-12 02:33:24,375 DEBUG   HandlerThread:9505 [meta.py:_setup_git():211] setup git done
+2022-01-12 02:33:24,375 DEBUG   HandlerThread:9505 [meta.py:_save_pip():58] save pip
+2022-01-12 02:33:24,376 DEBUG   HandlerThread:9505 [meta.py:_save_pip():72] save pip done
+2022-01-12 02:33:24,376 DEBUG   HandlerThread:9505 [meta.py:_save_conda():79] save conda
+2022-01-12 02:33:25,328 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/conda-environment.yaml
+2022-01-12 02:33:25,329 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:25,330 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/requirements.txt
+2022-01-12 02:33:27,416 DEBUG   HandlerThread:9505 [meta.py:_save_conda():89] save conda done
+2022-01-12 02:33:27,416 DEBUG   HandlerThread:9505 [meta.py:probe():252] probe done
+2022-01-12 02:33:27,523 DEBUG   SenderThread:9505 [sender.py:send():234] send: files
+2022-01-12 02:33:27,523 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2022-01-12 02:33:27,538 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 02:33:27,538 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 02:33:27,737 DEBUG   SenderThread:9505 [sender.py:send():234] send: config
+2022-01-12 02:33:28,043 INFO    Thread-11 :9505 [upload_job.py:push():137] Uploaded file /tmp/tmpnzrtfv65wandb/wcpwhc2x-wandb-metadata.json
+2022-01-12 02:33:28,320 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:28,321 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:28,322 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:28,331 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/conda-environment.yaml
+2022-01-12 02:33:28,331 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:28,332 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:28,332 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_created():217] file/dir created: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-metadata.json
+2022-01-12 02:33:28,354 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:28,354 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:28,359 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:29,200 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:29,200 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:29,201 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:29,234 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:29,235 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:29,235 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:29,332 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:29,768 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:29,768 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:29,769 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:29,800 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:29,800 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:29,800 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:30,332 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:30,332 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:30,333 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:30,333 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:30,334 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:30,365 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:30,366 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:30,369 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:30,945 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:30,946 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:30,946 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:30,981 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:30,981 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:30,981 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:31,334 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:31,639 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:31,639 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:31,640 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:31,676 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:31,677 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:31,677 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:32,289 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:32,289 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:32,290 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:32,322 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:32,322 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:32,323 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:32,334 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:32,335 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:32,948 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:32,949 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:32,952 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:32,981 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:32,982 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:32,982 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:33,336 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:33,578 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:33,579 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:33,579 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:33,613 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:33,614 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:33,614 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:34,222 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:34,223 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:34,223 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:34,255 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:34,255 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:34,256 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:34,337 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:34,337 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:34,856 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:34,856 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:34,857 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:34,888 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:34,888 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:34,889 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:35,337 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:35,480 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:35,480 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:35,485 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:35,511 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:35,511 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:35,512 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:36,123 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:36,124 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:36,125 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:36,160 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:36,160 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:36,161 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:36,338 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:36,338 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:36,798 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:36,798 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:36,799 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:36,833 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:36,833 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:36,833 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:37,338 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:37,453 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:37,453 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:37,453 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:37,488 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:37,488 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:37,493 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:38,078 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:38,078 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:38,079 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:38,111 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:38,111 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:38,112 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:38,339 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:38,339 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:38,698 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:38,699 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:38,699 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:38,730 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:38,731 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:38,731 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:39,339 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:39,358 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:39,358 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:39,358 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:39,396 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:39,396 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:39,397 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:40,111 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:40,112 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:40,112 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:40,150 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:40,150 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:40,151 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:40,340 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:40,341 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:40,761 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:40,761 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:40,762 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:40,795 DEBUG   SenderThread:9505 [sender.py:send():234] send: history
+2022-01-12 02:33:40,795 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:40,796 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:41,341 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:42,341 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:43,923 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:43,923 DEBUG   SenderThread:9505 [sender.py:send():234] send: telemetry
+2022-01-12 02:33:43,924 DEBUG   SenderThread:9505 [sender.py:send():234] send: exit
+2022-01-12 02:33:43,925 INFO    SenderThread:9505 [sender.py:send_exit():366] handling exit code: 1
+2022-01-12 02:33:43,932 INFO    SenderThread:9505 [sender.py:send_exit():368] handling runtime: 19
+2022-01-12 02:33:43,932 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:43,932 INFO    SenderThread:9505 [sender.py:send_exit():374] send defer
+2022-01-12 02:33:43,933 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:43,934 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:43,935 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 0
+2022-01-12 02:33:43,935 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:43,935 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 0
+2022-01-12 02:33:43,935 INFO    SenderThread:9505 [sender.py:transition_state():387] send defer: 1
+2022-01-12 02:33:43,936 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:43,936 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 1
+2022-01-12 02:33:44,210 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:44,211 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:44,211 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 1
+2022-01-12 02:33:44,212 INFO    SenderThread:9505 [sender.py:transition_state():387] send defer: 2
+2022-01-12 02:33:44,213 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:44,213 DEBUG   SenderThread:9505 [sender.py:send():234] send: stats
+2022-01-12 02:33:44,215 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:44,215 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 2
+2022-01-12 02:33:44,216 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:44,216 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 2
+2022-01-12 02:33:44,216 INFO    SenderThread:9505 [sender.py:transition_state():387] send defer: 3
+2022-01-12 02:33:44,217 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:44,217 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 3
+2022-01-12 02:33:44,217 DEBUG   SenderThread:9505 [sender.py:send():234] send: summary
+2022-01-12 02:33:44,218 INFO    SenderThread:9505 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 02:33:44,218 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:44,218 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 3
+2022-01-12 02:33:44,218 INFO    SenderThread:9505 [sender.py:transition_state():387] send defer: 4
+2022-01-12 02:33:44,219 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:44,219 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 4
+2022-01-12 02:33:44,219 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:44,220 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 4
+2022-01-12 02:33:44,317 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:44,343 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:44,343 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:44,454 INFO    SenderThread:9505 [sender.py:transition_state():387] send defer: 5
+2022-01-12 02:33:44,454 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:44,455 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:44,456 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 5
+2022-01-12 02:33:44,456 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:44,456 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 5
+2022-01-12 02:33:44,456 INFO    SenderThread:9505 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-12 02:33:44,557 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:45,343 INFO    Thread-8  :9505 [dir_watcher.py:_on_file_modified():230] file/dir modified: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/config.yaml
+2022-01-12 02:33:45,344 INFO    SenderThread:9505 [dir_watcher.py:finish():313] scan: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files
+2022-01-12 02:33:45,345 INFO    SenderThread:9505 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log output.log
+2022-01-12 02:33:45,345 INFO    SenderThread:9505 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/conda-environment.yaml conda-environment.yaml
+2022-01-12 02:33:45,345 INFO    SenderThread:9505 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json wandb-summary.json
+2022-01-12 02:33:45,346 INFO    SenderThread:9505 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-metadata.json wandb-metadata.json
+2022-01-12 02:33:45,352 INFO    SenderThread:9505 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/requirements.txt requirements.txt
+2022-01-12 02:33:45,352 INFO    SenderThread:9505 [dir_watcher.py:finish():327] scan save: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/config.yaml config.yaml
+2022-01-12 02:33:45,378 INFO    SenderThread:9505 [sender.py:transition_state():387] send defer: 6
+2022-01-12 02:33:45,378 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:45,382 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:45,391 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 6
+2022-01-12 02:33:45,392 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:45,393 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 6
+2022-01-12 02:33:45,393 INFO    SenderThread:9505 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-12 02:33:45,483 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:45,484 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:45,587 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:45,588 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:45,690 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:45,690 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:45,792 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:45,793 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:45,895 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:45,895 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:45,910 INFO    Thread-13 :9505 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/conda-environment.yaml
+2022-01-12 02:33:45,929 INFO    Thread-16 :9505 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/config.yaml
+2022-01-12 02:33:45,939 INFO    Thread-15 :9505 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/requirements.txt
+2022-01-12 02:33:45,993 INFO    Thread-14 :9505 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/wandb-summary.json
+2022-01-12 02:33:45,995 INFO    Thread-12 :9505 [upload_job.py:push():137] Uploaded file /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/files/output.log
+2022-01-12 02:33:45,997 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:45,998 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:46,100 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:46,100 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:46,197 INFO    Thread-7  :9505 [sender.py:transition_state():387] send defer: 7
+2022-01-12 02:33:46,197 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:46,198 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 7
+2022-01-12 02:33:46,198 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:46,198 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 7
+2022-01-12 02:33:46,202 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:46,525 INFO    SenderThread:9505 [sender.py:transition_state():387] send defer: 8
+2022-01-12 02:33:46,526 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:46,527 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:46,527 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 8
+2022-01-12 02:33:46,527 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:46,527 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 8
+2022-01-12 02:33:46,528 INFO    SenderThread:9505 [sender.py:transition_state():387] send defer: 9
+2022-01-12 02:33:46,529 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 02:33:46,529 DEBUG   SenderThread:9505 [sender.py:send():234] send: final
+2022-01-12 02:33:46,529 INFO    HandlerThread:9505 [handler.py:handle_request_defer():147] handle defer: 9
+2022-01-12 02:33:46,530 DEBUG   SenderThread:9505 [sender.py:send():234] send: footer
+2022-01-12 02:33:46,530 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: defer
+2022-01-12 02:33:46,530 INFO    SenderThread:9505 [sender.py:send_request_defer():383] handle sender defer: 9
+2022-01-12 02:33:46,628 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 02:33:46,629 DEBUG   SenderThread:9505 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 02:33:46,629 INFO    SenderThread:9505 [file_pusher.py:join():182] waiting for file pusher
+2022-01-12 02:33:47,023 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: get_summary
+2022-01-12 02:33:47,025 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: sampled_history
+2022-01-12 02:33:47,028 DEBUG   HandlerThread:9505 [handler.py:handle_request():130] handle_request: shutdown
+2022-01-12 02:33:47,028 INFO    HandlerThread:9505 [handler.py:finish():731] shutting down handler
+2022-01-12 02:33:47,530 INFO    WriterThread:9505 [datastore.py:close():281] close: /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220112_023322-1d4iauqp/run-1d4iauqp.wandb
+2022-01-12 02:33:48,022 INFO    SenderThread:9505 [sender.py:finish():1070] shutting down sender
+2022-01-12 02:33:48,022 INFO    SenderThread:9505 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-12 02:33:48,022 INFO    SenderThread:9505 [file_pusher.py:join():182] waiting for file pusher
+2022-01-12 02:33:48,025 INFO    MainThread:9505 [internal.py:handle_exit():77] Internal process exited

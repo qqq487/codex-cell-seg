@@ -1,0 +1,33 @@
+
+num_imgs 5
+INFO: Starting training:
+        Epochs:          15000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/15000:   0%|                                                                                                                                                                 | 0/3 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train-multi.py", line 223, in <module>
+    amp=args.amp)
+  File "train-multi.py", line 101, in train_net
+    for batch in train_loader:
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 475, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataset.py", line 272, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 286, in __getitem__
+    img, mask = self.cell_transform(img, mask, 1)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 185, in cell_transform
+    image = TF.crop(image, i, j, h, w)
+UnboundLocalError: local variable 'image' referenced before assignment

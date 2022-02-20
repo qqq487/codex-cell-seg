@@ -1,0 +1,17 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/1000: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:02<00:00,  1.73img/s, loss (batch)=1.44]
+Traceback (most recent call last):
+  File "train.py", line 221, in <module>
+    amp=args.amp)
+  File "train.py", line 165, in train_net
+    torch.save(net.state_dict(), str(dir_checkpoint / 'checkpoint_epoch{}.pth'.format(epoch + 1)))
+TypeError: unsupported operand type(s) for /: 'str' and 'str'

@@ -1,0 +1,35 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                                                                  | 0/4 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 196, in <module>
+    amp=args.amp)
+  File "train.py", line 97, in train_net
+    masks_pred = net(images)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/unet/unet_model.py", line 26, in forward
+    x1 = self.inc(x)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/unet/unet_parts.py", line 25, in forward
+    return self.double_conv(x)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/batchnorm.py", line 178, in forward
+    self.eps,
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/functional.py", line 2282, in batch_norm
+    input, weight, bias, running_mean, running_var, training, momentum, eps, torch.backends.cudnn.enabled
+RuntimeError: CUDA out of memory. Tried to allocate 126.00 MiB (GPU 0; 10.76 GiB total capacity; 216.38 MiB already allocated; 97.56 MiB free; 238.00 MiB reserved in total by PyTorch)

@@ -1,0 +1,40 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   29
+        Validation size: 3
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/1000:   7%|███████████▏                                                                                                                                                       | 2/29 [00:00<00:05,  5.19img/s, loss (batch)=1.27]INFO: Validation Dice score: 0.3347494602203369
+Epoch 1/1000:  14%|██████████████████████▍                                                                                                                                            | 4/29 [00:00<00:06,  3.93img/s, loss (batch)=1.24]INFO: Validation Dice score: 0.4266430139541626
+Epoch 1/1000:  21%|█████████████████████████████████▉                                                                                                                                  | 6/29 [00:01<00:05,  4.03img/s, loss (batch)=1.2]INFO: Validation Dice score: 0.40956905484199524
+Epoch 1/1000:  28%|████████████████████████████████████████████▉                                                                                                                      | 8/29 [00:01<00:05,  4.13img/s, loss (batch)=1.43]INFO: Validation Dice score: 0.5192478895187378
+Epoch 1/1000:  34%|████████████████████████████████████████████████████████▏                                                                                                          | 10/29 [00:02<00:04,  4.18img/s, loss (batch)=1.7]INFO: Validation Dice score: 0.4035513997077942
+Epoch 1/1000:  41%|███████████████████████████████████████████████████████████████████                                                                                               | 12/29 [00:02<00:04,  4.18img/s, loss (batch)=1.32]INFO: Validation Dice score: 0.3393411636352539
+Epoch 1/1000:  48%|██████████████████████████████████████████████████████████████████████████████▏                                                                                   | 14/29 [00:03<00:03,  4.01img/s, loss (batch)=1.18]INFO: Validation Dice score: 0.2620832622051239
+Epoch 1/1000:  55%|█████████████████████████████████████████████████████████████████████████████████████████▍                                                                        | 16/29 [00:03<00:03,  4.04img/s, loss (batch)=1.56]INFO: Validation Dice score: 0.4472094774246216
+Epoch 1/1000:  62%|████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                             | 18/29 [00:04<00:02,  4.05img/s, loss (batch)=1.48]INFO: Validation Dice score: 0.3294796347618103
+Epoch 1/1000:  69%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                  | 20/29 [00:04<00:02,  4.11img/s, loss (batch)=1.25]INFO: Validation Dice score: 0.524909496307373
+Epoch 1/1000:  76%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                       | 22/29 [00:05<00:01,  4.15img/s, loss (batch)=1.2]INFO: Validation Dice score: 0.4796340763568878
+Epoch 1/1000:  83%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                            | 24/29 [00:05<00:01,  4.19img/s, loss (batch)=1.37]INFO: Validation Dice score: 0.3637402355670929
+Epoch 1/1000:  90%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                | 26/29 [00:06<00:00,  4.18img/s, loss (batch)=1.57]INFO: Validation Dice score: 0.3746679425239563
+Epoch 1/1000:  97%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍     | 28/29 [00:06<00:00,  4.19img/s, loss (batch)=1.26]INFO: Validation Dice score: 0.42068353295326233
+Epoch 1/1000: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:07<00:00,  4.03img/s, loss (batch)=1.04]
+Traceback (most recent call last):
+  File "train.py", line 206, in <module>
+    amp=args.amp)
+  File "train.py", line 135, in train_net
+    histograms['Gradients/' + tag] = wandb.Histogram(value.grad.data.cpu())
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/wandb/sdk/data_types.py", line 402, in __init__
+    self.histogram, self.bins = np.histogram(sequence, bins=num_bins)
+  File "<__array_function__ internals>", line 6, in histogram
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/numpy/lib/histograms.py", line 785, in histogram
+    bin_edges, uniform_bins = _get_bin_edges(a, bins, range, weights)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/numpy/lib/histograms.py", line 419, in _get_bin_edges
+    first_edge, last_edge = _get_outer_edges(a, range)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/numpy/lib/histograms.py", line 317, in _get_outer_edges
+    "autodetected range of [{}, {}] is not finite".format(first_edge, last_edge))
+ValueError: autodetected range of [nan, nan] is not finite

@@ -1,0 +1,29 @@
+INFO: Starting training:
+        Epochs:          15000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/15000:   0%|                                                                                                                                                                 | 0/3 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train-multi.py", line 223, in <module>
+    amp=args.amp)
+  File "train-multi.py", line 101, in train_net
+    for batch in train_loader:
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 475, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/collate.py", line 73, in default_collate
+    return {key: default_collate([d[key] for d in batch]) for key in elem}
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/collate.py", line 73, in <dictcomp>
+    return {key: default_collate([d[key] for d in batch]) for key in elem}
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/collate.py", line 55, in default_collate
+    return torch.stack(batch, 0, out=out)
+RuntimeError: stack expects each tensor to be equal size, but got [5, 100, 281] at entry 0 and [5, 298, 108] at entry 1

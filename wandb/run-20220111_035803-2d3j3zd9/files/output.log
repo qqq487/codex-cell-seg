@@ -1,0 +1,23 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: False
+Epoch 1/1000: 100%|███████████████████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.77img/s, loss (batch)=2.16]
+INFO: Checkpoint 1 saved!
+Epoch 2/1000: 100%|███████████████████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.92img/s, loss (batch)=2.01]
+Epoch 3/1000: 100%|███████████████████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.96img/s, loss (batch)=1.93]
+Epoch 4/1000:   0%|                                                                                                              | 0/4 [00:00<?, ?img/s]
+INFO: Saved interrupt
+Exception ignored in: <bound method _MultiProcessingDataLoaderIter.__del__ of <torch.utils.data.dataloader._MultiProcessingDataLoaderIter object at 0x7fd70ae6aa58>>
+Traceback (most recent call last):
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 1203, in __del__
+    self._shutdown_workers()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 1174, in _shutdown_workers
+    if self._persistent_workers or self._workers_status[worker_id]:
+AttributeError: '_MultiProcessingDataLoaderIter' object has no attribute '_workers_status'

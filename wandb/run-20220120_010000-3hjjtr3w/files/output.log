@@ -1,0 +1,62 @@
+name =  23
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/23_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/23/0701_reg001_cyc013_ch004_N-Cadherin_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc009_ch004_ScaI_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc007_ch004_CD45_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc006_ch003_Ly6C_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc012_ch003_CD4_23.png']
+name =  13
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/13_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/13/0701_reg001_cyc012_ch003_CD4_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc007_ch004_CD45_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc009_ch004_ScaI_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc006_ch003_Ly6C_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc013_ch004_N-Cadherin_13.png']
+name =  0
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/0_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/0/0701_reg001_cyc007_ch004_CD45_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc012_ch003_CD4_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc006_ch003_Ly6C_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc009_ch004_ScaI_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc013_ch004_N-Cadherin_0.png']
+name =  4
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/4_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/4/0701_reg001_cyc009_ch004_ScaI_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc006_ch003_Ly6C_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc012_ch003_CD4_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc013_ch004_N-Cadherin_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc007_ch004_CD45_4.png']
+name =  13
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/13_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/13/0701_reg001_cyc012_ch003_CD4_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc007_ch004_CD45_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc009_ch004_ScaI_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc006_ch003_Ly6C_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc013_ch004_N-Cadherin_13.png']
+name =  0
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/0_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/0/0701_reg001_cyc007_ch004_CD45_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc012_ch003_CD4_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc006_ch003_Ly6C_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc009_ch004_ScaI_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc013_ch004_N-Cadherin_0.png']
+name =  23
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/23_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/23/0701_reg001_cyc013_ch004_N-Cadherin_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc009_ch004_ScaI_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc007_ch004_CD45_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc006_ch003_Ly6C_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc012_ch003_CD4_23.png']
+name =  4
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/4_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/4/0701_reg001_cyc009_ch004_ScaI_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc006_ch003_Ly6C_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc012_ch003_CD4_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc013_ch004_N-Cadherin_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc007_ch004_CD45_4.png']
+name =  0
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/0_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/0/0701_reg001_cyc007_ch004_CD45_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc012_ch003_CD4_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc006_ch003_Ly6C_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc009_ch004_ScaI_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc013_ch004_N-Cadherin_0.png']
+name =  13
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/13_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/13/0701_reg001_cyc012_ch003_CD4_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc007_ch004_CD45_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc009_ch004_ScaI_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc006_ch003_Ly6C_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc013_ch004_N-Cadherin_13.png']
+name =  23
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/23_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/23/0701_reg001_cyc013_ch004_N-Cadherin_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc009_ch004_ScaI_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc007_ch004_CD45_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc006_ch003_Ly6C_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc012_ch003_CD4_23.png']
+name =  4
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/4_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/4/0701_reg001_cyc009_ch004_ScaI_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc006_ch003_Ly6C_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc012_ch003_CD4_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc013_ch004_N-Cadherin_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc007_ch004_CD45_4.png']
+name =  13
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/13_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/13/0701_reg001_cyc012_ch003_CD4_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc007_ch004_CD45_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc009_ch004_ScaI_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc006_ch003_Ly6C_13.png', 'data/multi-org-same-ch/imgs/13/0701_reg001_cyc013_ch004_N-Cadherin_13.png']
+name =  0
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/0_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/0/0701_reg001_cyc007_ch004_CD45_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc012_ch003_CD4_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc006_ch003_Ly6C_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc009_ch004_ScaI_0.png', 'data/multi-org-same-ch/imgs/0/0701_reg001_cyc013_ch004_N-Cadherin_0.png']
+name =  23
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/23_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/23/0701_reg001_cyc013_ch004_N-Cadherin_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc009_ch004_ScaI_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc007_ch004_CD45_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc006_ch003_Ly6C_23.png', 'data/multi-org-same-ch/imgs/23/0701_reg001_cyc012_ch003_CD4_23.png']
+name =  4
+mask_file =  [PosixPath('data/multi-org-same-ch/masks/4_mask.npy')]
+img_file =  ['data/multi-org-same-ch/imgs/4/0701_reg001_cyc009_ch004_ScaI_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc006_ch003_Ly6C_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc012_ch003_CD4_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc013_ch004_N-Cadherin_4.png', 'data/multi-org-same-ch/imgs/4/0701_reg001_cyc007_ch004_CD45_4.png']
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/1000: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00,  5.22img/s, loss (batch)=1.16]
+INFO: Checkpoint 1 saved!
+Epoch 2/1000: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 18.20img/s, loss (batch)=1.49]
+Epoch 3/1000: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 21.04img/s, loss (batch)=1.4]

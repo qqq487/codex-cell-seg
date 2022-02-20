@@ -1,0 +1,137 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                                                                                         | 0/4 [00:00<?, ?img/s]/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torchvision/transforms/functional.py:92: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370116979/work/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.from_numpy(np.array(pic, np.float32, copy=False))
+/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torchvision/transforms/functional.py:92: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370116979/work/torch/csrc/utils/tensor_numpy.cpp:141.)
+  img = torch.from_numpy(np.array(pic, np.float32, copy=False))
+Epoch 1/1000:   0%|                                                                                                                                                                                         | 0/4 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 202, in <module>
+    amp=args.amp)
+  File "train.py", line 104, in train_net
+    loss = criterion(masks_pred, true_masks) \
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/loss.py", line 962, in forward
+    ignore_index=self.ignore_index, reduction=self.reduction)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/functional.py", line 2468, in cross_entropy
+    return nll_loss(log_softmax(input, 1), target, weight, None, ignore_index, None, reduction)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/functional.py", line 2266, in nll_loss
+    ret = torch._C._nn.nll_loss2d(input, target, weight, _Reduction.get_enum(reduction), ignore_index)
+RuntimeError: 1only batches of spatial targets supported (3D tensors) but got targets of size: : [2, 1, 200, 200]
+sample {'image': tensor([[[0.0314, 0.0196, 0.0078,  ..., 0.0196, 0.0118, 0.0118],
+         [0.0667, 0.0353, 0.0235,  ..., 0.0078, 0.0078, 0.0039],
+         [0.1216, 0.0667, 0.0471,  ..., 0.0039, 0.0039, 0.0000],
+         ...,
+         [0.0196, 0.0314, 0.0471,  ..., 0.0157, 0.0275, 0.0353],
+         [0.0275, 0.0314, 0.0431,  ..., 0.0196, 0.0275, 0.0353],
+         [0.0353, 0.0353, 0.0471,  ..., 0.0275, 0.0353, 0.0471]],
+        [[0.0314, 0.0196, 0.0078,  ..., 0.0196, 0.0118, 0.0118],
+         [0.0667, 0.0353, 0.0235,  ..., 0.0078, 0.0078, 0.0039],
+         [0.1216, 0.0667, 0.0471,  ..., 0.0039, 0.0039, 0.0000],
+         ...,
+         [0.0196, 0.0314, 0.0471,  ..., 0.0157, 0.0275, 0.0353],
+         [0.0275, 0.0314, 0.0431,  ..., 0.0196, 0.0275, 0.0353],
+         [0.0353, 0.0353, 0.0471,  ..., 0.0275, 0.0353, 0.0471]],
+        [[0.0314, 0.0196, 0.0078,  ..., 0.0196, 0.0118, 0.0118],
+         [0.0667, 0.0353, 0.0235,  ..., 0.0078, 0.0078, 0.0039],
+         [0.1216, 0.0667, 0.0471,  ..., 0.0039, 0.0039, 0.0000],
+         ...,
+         [0.0196, 0.0314, 0.0471,  ..., 0.0157, 0.0275, 0.0353],
+         [0.0275, 0.0314, 0.0431,  ..., 0.0196, 0.0275, 0.0353],
+         [0.0353, 0.0353, 0.0471,  ..., 0.0275, 0.0353, 0.0471]]]), 'mask': tensor([[[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 1., 0., 0.],
+         [0., 0., 0.,  ..., 1., 0., 0.],
+         [0., 0., 0.,  ..., 1., 0., 0.]]])}
+sample {'image': tensor([[[0.1373, 0.1294, 0.1020,  ..., 0.0549, 0.0392, 0.0235],
+         [0.1059, 0.0980, 0.0941,  ..., 0.0314, 0.0275, 0.0196],
+         [0.1373, 0.1373, 0.1333,  ..., 0.0314, 0.0196, 0.0157],
+         ...,
+         [0.0196, 0.0078, 0.0078,  ..., 0.0039, 0.0000, 0.0039],
+         [0.0157, 0.0039, 0.0039,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0118, 0.0039, 0.0078,  ..., 0.0000, 0.0000, 0.0039]],
+        [[0.1373, 0.1294, 0.1020,  ..., 0.0549, 0.0392, 0.0235],
+         [0.1059, 0.0980, 0.0941,  ..., 0.0314, 0.0275, 0.0196],
+         [0.1373, 0.1373, 0.1333,  ..., 0.0314, 0.0196, 0.0157],
+         ...,
+         [0.0196, 0.0078, 0.0078,  ..., 0.0039, 0.0000, 0.0039],
+         [0.0157, 0.0039, 0.0039,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0118, 0.0039, 0.0078,  ..., 0.0000, 0.0000, 0.0039]],
+        [[0.1373, 0.1294, 0.1020,  ..., 0.0549, 0.0392, 0.0235],
+         [0.1059, 0.0980, 0.0941,  ..., 0.0314, 0.0275, 0.0196],
+         [0.1373, 0.1373, 0.1333,  ..., 0.0314, 0.0196, 0.0157],
+         ...,
+         [0.0196, 0.0078, 0.0078,  ..., 0.0039, 0.0000, 0.0039],
+         [0.0157, 0.0039, 0.0039,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0118, 0.0039, 0.0078,  ..., 0.0000, 0.0000, 0.0039]]]), 'mask': tensor([[[1., 1., 1.,  ..., 1., 0., 0.],
+         [1., 1., 1.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [1., 1., 1.,  ..., 0., 0., 0.],
+         [1., 1., 1.,  ..., 0., 0., 0.],
+         [1., 1., 1.,  ..., 0., 0., 0.]]])}
+sample {'image': tensor([[[0.0039, 0.0118, 0.0118,  ..., 0.7529, 0.8000, 0.7490],
+         [0.0078, 0.0039, 0.0039,  ..., 0.5882, 0.6863, 0.5804],
+         [0.0039, 0.0000, 0.0000,  ..., 0.3725, 0.4039, 0.5686],
+         ...,
+         [0.0863, 0.0784, 0.1098,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0471, 0.0431, 0.0588,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0275, 0.0275, 0.0353,  ..., 0.0000, 0.0000, 0.0039]],
+        [[0.0039, 0.0118, 0.0118,  ..., 0.7529, 0.8000, 0.7490],
+         [0.0078, 0.0039, 0.0039,  ..., 0.5882, 0.6863, 0.5804],
+         [0.0039, 0.0000, 0.0000,  ..., 0.3725, 0.4039, 0.5686],
+         ...,
+         [0.0863, 0.0784, 0.1098,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0471, 0.0431, 0.0588,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0275, 0.0275, 0.0353,  ..., 0.0000, 0.0000, 0.0039]],
+        [[0.0039, 0.0118, 0.0118,  ..., 0.7529, 0.8000, 0.7490],
+         [0.0078, 0.0039, 0.0039,  ..., 0.5882, 0.6863, 0.5804],
+         [0.0039, 0.0000, 0.0000,  ..., 0.3725, 0.4039, 0.5686],
+         ...,
+         [0.0863, 0.0784, 0.1098,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0471, 0.0431, 0.0588,  ..., 0.0000, 0.0000, 0.0039],
+         [0.0275, 0.0275, 0.0353,  ..., 0.0000, 0.0000, 0.0039]]]), 'mask': tensor([[[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 1., 1., 1.],
+         [0., 0., 0.,  ..., 1., 1., 1.],
+         [0., 0., 0.,  ..., 1., 1., 1.]]])}
+sample {'image': tensor([[[0.1451, 0.2863, 0.5765,  ..., 0.1098, 0.0588, 0.0549],
+         [0.1412, 0.3098, 0.7686,  ..., 0.1294, 0.0706, 0.0588],
+         [0.1490, 0.3686, 0.8510,  ..., 0.2039, 0.1294, 0.0863],
+         ...,
+         [0.0706, 0.0510, 0.0392,  ..., 0.2196, 0.2078, 0.2078],
+         [0.1569, 0.1176, 0.0706,  ..., 0.1804, 0.2235, 0.3020],
+         [0.2275, 0.1647, 0.0824,  ..., 0.1804, 0.2157, 0.2980]],
+        [[0.1451, 0.2863, 0.5765,  ..., 0.1098, 0.0588, 0.0549],
+         [0.1412, 0.3098, 0.7686,  ..., 0.1294, 0.0706, 0.0588],
+         [0.1490, 0.3686, 0.8510,  ..., 0.2039, 0.1294, 0.0863],
+         ...,
+         [0.0706, 0.0510, 0.0392,  ..., 0.2196, 0.2078, 0.2078],
+         [0.1569, 0.1176, 0.0706,  ..., 0.1804, 0.2235, 0.3020],
+         [0.2275, 0.1647, 0.0824,  ..., 0.1804, 0.2157, 0.2980]],
+        [[0.1451, 0.2863, 0.5765,  ..., 0.1098, 0.0588, 0.0549],
+         [0.1412, 0.3098, 0.7686,  ..., 0.1294, 0.0706, 0.0588],
+         [0.1490, 0.3686, 0.8510,  ..., 0.2039, 0.1294, 0.0863],
+         ...,
+         [0.0706, 0.0510, 0.0392,  ..., 0.2196, 0.2078, 0.2078],
+         [0.1569, 0.1176, 0.0706,  ..., 0.1804, 0.2235, 0.3020],
+         [0.2275, 0.1647, 0.0824,  ..., 0.1804, 0.2157, 0.2980]]]), 'mask': tensor([[[0., 0., 0.,  ..., 0., 1., 1.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [1., 1., 1.,  ..., 0., 0., 0.],
+         [1., 1., 1.,  ..., 0., 0., 0.],
+         [1., 1., 1.,  ..., 0., 0., 0.]]])}

@@ -1,0 +1,33 @@
+
+before =  [<PIL.PngImagePlugin.PngImageFile image mode=RGB size=672x756 at 0x7F2D09467748>, <PIL.PngImagePlugin.PngImageFile image mode=RGB size=672x756 at 0x7F2D08359128>, <PIL.PngImagePlugin.PngImageFile image mode=RGB size=672x756 at 0x7F2D083654A8>, <PIL.PngImagePlugin.PngImageFile image mode=RGB size=672x756 at 0x7F2D08365940>, <PIL.PngImagePlugin.PngImageFile image mode=RGB size=672x756 at 0x7F2D083659B0>]
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                    | 0/4 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    amp=args.amp)
+  File "train.py", line 101, in train_net
+    for batch in train_loader:
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 475, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataset.py", line 272, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 267, in __getitem__
+    img, mask = self.cell_transform(img, mask, 1)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 182, in cell_transform
+    image[0], output_size=(150, 150))
+NameError: name 'image' is not defined

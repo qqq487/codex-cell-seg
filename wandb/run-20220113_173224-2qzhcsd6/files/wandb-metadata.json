@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.4.0-91-generic-x86_64-with-debian-buster-sid",
+    "python": "3.6.12",
+    "heartbeatAt": "2022-01-13T09:32:26.329081",
+    "startedAt": "2022-01-13T09:32:24.328848",
+    "docker": null,
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 8,
+    "cpu_count": 64,
+    "cuda": "10.0.130",
+    "args": [
+        "--amp"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/milesial/Pytorch-UNet.git",
+        "commit": "0921374ee4ed02688ef5ed48c50b241ee8911069"
+    },
+    "email": "chacotw487@gmail.com",
+    "root": "/tmp2/chacotw/unet/Pytorch-UNet",
+    "host": "cml18",
+    "username": "chacotw",
+    "executable": "/home/master/09/chacotw/miniconda3/envs/detectron2/bin/python"
+}

@@ -1,0 +1,25 @@
+2022-01-11 22:14:26,328 INFO    MainThread:12897 [wandb_setup.py:_flush():71] setting env: {}
+2022-01-11 22:14:26,329 INFO    MainThread:12897 [wandb_setup.py:_flush():71] setting login settings: {'anonymous': 'must'}
+2022-01-11 22:14:26,329 INFO    MainThread:12897 [wandb_init.py:_log_setup():371] Logging user logs to /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221426-31i9ao39/logs/debug.log
+2022-01-11 22:14:26,329 INFO    MainThread:12897 [wandb_init.py:_log_setup():372] Logging internal logs to /tmp2/chacotw/unet/Pytorch-UNet/wandb/run-20220111_221426-31i9ao39/logs/debug-internal.log
+2022-01-11 22:14:26,329 INFO    MainThread:12897 [wandb_init.py:init():404] calling init triggers
+2022-01-11 22:14:26,329 INFO    MainThread:12897 [wandb_init.py:init():411] wandb.init called with sweep_config: {}
+config: {}
+2022-01-11 22:14:26,329 INFO    MainThread:12897 [wandb_init.py:init():460] starting backend
+2022-01-11 22:14:26,330 INFO    MainThread:12897 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-01-11 22:14:26,356 INFO    MainThread:12897 [backend.py:ensure_launched():216] starting backend process...
+2022-01-11 22:14:26,375 INFO    MainThread:12897 [backend.py:ensure_launched():222] started backend process with pid: 12923
+2022-01-11 22:14:26,376 INFO    MainThread:12897 [wandb_init.py:init():469] backend started and connected
+2022-01-11 22:14:26,381 INFO    MainThread:12897 [wandb_init.py:init():533] updated telemetry
+2022-01-11 22:14:26,436 INFO    MainThread:12897 [wandb_init.py:init():563] communicating current version
+2022-01-11 22:14:27,847 INFO    MainThread:12897 [wandb_init.py:init():568] got version response 
+2022-01-11 22:14:27,848 INFO    MainThread:12897 [wandb_init.py:init():578] communicating run to backend with 30 second timeout
+2022-01-11 22:14:28,492 INFO    MainThread:12897 [wandb_init.py:init():606] starting run threads in backend
+2022-01-11 22:14:30,828 INFO    MainThread:12897 [wandb_run.py:_console_start():1810] atexit reg
+2022-01-11 22:14:30,829 INFO    MainThread:12897 [wandb_run.py:_redirect():1684] redirect: SettingsConsole.REDIRECT
+2022-01-11 22:14:30,831 INFO    MainThread:12897 [wandb_run.py:_redirect():1689] Redirecting console.
+2022-01-11 22:14:30,834 INFO    MainThread:12897 [wandb_run.py:_redirect():1745] Redirects installed.
+2022-01-11 22:14:30,839 INFO    MainThread:12897 [wandb_init.py:init():633] run started, returning control to user process
+2022-01-11 22:14:30,842 INFO    MainThread:12897 [wandb_run.py:_config_callback():956] config_cb None None {'epochs': 1000, 'batch_size': 2, 'learning_rate': 1e-06, 'val_percent': 0.1, 'save_checkpoint': True, 'img_scale': 0.5, 'amp': True}
+2022-01-11 22:14:31,039 INFO    MainThread:12897 [wandb_run.py:_atexit_cleanup():1780] got exitcode: 1
+2022-01-11 22:14:31,045 INFO    MainThread:12897 [wandb_run.py:_restore():1752] restore

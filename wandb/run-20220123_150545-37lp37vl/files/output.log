@@ -1,0 +1,37 @@
+stack_img size =  torch.Size([5, 1, 150, 150])
+stack_img size =  torch.Size([5, 1, 150, 150])
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                    | 0/4 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    amp=args.amp)
+  File "train.py", line 114, in train_net
+    masks_pred = net(images)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/unet/unet_model.py", line 33, in forward
+    x1 = self.ca0(self.inc(x))
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/unet/unet_parts.py", line 25, in forward
+    return self.double_conv(x)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 423, in forward
+    return self._conv_forward(input, self.weight)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 420, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Expected 4-dimensional input for 4-dimensional weight [64, 5, 3, 3], but got 5-dimensional input of size [2, 5, 1, 150, 150] instead

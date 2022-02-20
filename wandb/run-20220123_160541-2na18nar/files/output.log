@@ -1,0 +1,29 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      16
+        Learning rate:   1e-06
+        Training size:   615
+        Validation size: 153
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                  | 0/615 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train-single.py", line 217, in <module>
+    amp=args.amp)
+  File "train-single.py", line 95, in train_net
+    for batch in train_loader:
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 475, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataset.py", line 272, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 120, in __getitem__
+    assert len(mask_file) == 1, f'Either no mask or multiple masks found for the ID {name}: {mask_file}'
+AssertionError: Either no mask or multiple masks found for the ID mcf-z-stacks-03212011_p03_s2_w1e1dbb49e-89a9-4855-b932-281465686896: []

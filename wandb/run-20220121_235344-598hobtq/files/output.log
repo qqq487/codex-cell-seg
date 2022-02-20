@@ -1,0 +1,88 @@
+x size =  <built-in method size of Tensor object at 0x7f05cac87168>
+x size(2) =  150
+x size(3) =  150
+x size =  <built-in method size of Tensor object at 0x7f05cac875e8>
+x size(2) =  75
+x size(3) =  75
+x size =  <built-in method size of Tensor object at 0x7f05cac87a68>
+x size(2) =  37
+x size(3) =  37
+x size =  <built-in method size of Tensor object at 0x7f05caca83a8>
+x size(2) =  18
+x size(3) =  18
+x size =  <built-in method size of Tensor object at 0x7f05caca8cf0>
+x size(2) =  9
+x size(3) =  9
+x size =  <built-in method size of Tensor object at 0x7f05cac7bf30>
+x size(2) =  150
+x size(3) =  150
+x size =  <built-in method size of Tensor object at 0x7f05cac87438>
+x size(2) =  75
+x size(3) =  75
+x size =  <built-in method size of Tensor object at 0x7f05cac878b8>
+x size(2) =  37
+x size(3) =  37
+x size =  <built-in method size of Tensor object at 0x7f05caca8120>
+x size(2) =  18
+x size(3) =  18
+x size =  <built-in method size of Tensor object at 0x7f05caca8a68>
+x size(2) =  9
+x size(3) =  9
+x size =  <built-in method size of Tensor object at 0x7f05c038e7e0>
+x size(2) =  150
+x size(3) =  150
+x size =  <built-in method size of Tensor object at 0x7f05c038e3a8>
+x size(2) =  75
+x size(3) =  75
+x size =  <built-in method size of Tensor object at 0x7f05c038e798>
+x size(2) =  37
+x size(3) =  37
+x size =  <built-in method size of Tensor object at 0x7f05cac875e8>
+x size(2) =  18
+x size(3) =  18
+x size =  <built-in method size of Tensor object at 0x7f05cac87a68>
+x size(2) =  9
+x size(3) =  9
+x size =  <built-in method size of Tensor object at 0x7f05c038e3f0>
+x size(2) =  150
+x size(3) =  150
+x size =  <built-in method size of Tensor object at 0x7f05c038e558>
+x size(2) =  75
+x size(3) =  75
+x size =  <built-in method size of Tensor object at 0x7f05cac7bf30>
+x size(2) =  37
+x size(3) =  37
+x size =  <built-in method size of Tensor object at 0x7f05cac87438>
+x size(2) =  18
+x size(3) =  18
+x size =  <built-in method size of Tensor object at 0x7f05c038e630>
+x size(2) =  9
+x size(3) =  9
+x size =  <built-in method size of Tensor object at 0x7f05c341c828>
+x size(2) =  150
+x size(3) =  150
+x size =  <built-in method size of Tensor object at 0x7f05c038e048>
+x size(2) =  75
+x size(3) =  75
+x size =  <built-in method size of Tensor object at 0x7f05c038e7e0>
+x size(2) =  37
+x size(3) =  37
+x size =  <built-in method size of Tensor object at 0x7f05c038e3a8>
+x size(2) =  18
+x size(3) =  18
+x size =  <built-in method size of Tensor object at 0x7f05c038e798>
+x size(2) =  9
+x size(3) =  9
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   4
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/1000: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00,  5.23img/s, loss (batch)=1.49]
+INFO: Checkpoint 1 saved!
+Epoch 2/1000: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 11.33img/s, loss (batch)=1.22]

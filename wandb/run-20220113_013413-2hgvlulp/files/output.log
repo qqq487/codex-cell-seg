@@ -1,0 +1,89 @@
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      1
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/1000:   0%|                                                                                                                                                                                         | 0/3 [00:00<?, ?img/s][ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 44: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 53: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 54: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 45: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 55: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 54: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 46: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 56: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 55: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 47: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 57: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 56: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 48: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 58: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 57: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 49: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 59: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 58: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 50: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 60: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 59: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 51: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 61: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 60: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 52: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 61: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 62: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 53: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 62: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 54: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 55: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 56: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 57: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 58: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 59: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 60: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 61: Can't spawn new thread: res = 11
+[ERROR:0] global /tmp/pip-req-build-1syr35c1/opencv/modules/core/src/parallel_impl.cpp (240) WorkerThread 62: Can't spawn new thread: res = 11
+Process Process-2:
+Traceback (most recent call last):
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/worker.py", line 212, in _worker_loop
+    data_queue.put((idx, data))
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/multiprocessing/queues.py", line 87, in put
+    self._start_thread()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/multiprocessing/queues.py", line 169, in _start_thread
+    self._thread.start()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/threading.py", line 846, in start
+    _start_new_thread(self._bootstrap, ())
+RuntimeError: can't start new thread
+Epoch 1/1000:   0%|                                                                                                                                                                                         | 0/3 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 872, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/queue.py", line 173, in get
+    self.not_empty.wait(remaining)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/threading.py", line 299, in wait
+    gotit = waiter.acquire(True, timeout)
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 2458) exited unexpectedly with exit code 1. Details are lost due to multiprocessing. Rerunning with num_workers=0 may give better error trace.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "train.py", line 208, in <module>
+    amp=args.amp)
+  File "train.py", line 95, in train_net
+    for batch in train_loader:
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 1068, in _next_data
+    idx, data = self._get_data()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 1024, in _get_data
+    success, data = self._try_get_data()
+  File "/home/master/09/chacotw/miniconda3/envs/detectron2/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 885, in _try_get_data
+    raise RuntimeError('DataLoader worker (pid(s) {}) exited unexpectedly'.format(pids_str)) from e
+RuntimeError: DataLoader worker (pid(s) 2458) exited unexpectedly
