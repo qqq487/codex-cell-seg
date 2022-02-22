@@ -3,19 +3,49 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
 
 import argparse
 import logging
-
 import numpy as np
 import torch
 import torch.nn.functional as F
+
 from PIL import Image, ImageOps
 from torchvision import transforms
+import torchvision.transforms.functional as TF
 
 from utils.data_loading import BasicDataset
 
 from unet import UNet
 from utils.utils import plot_img_and_mask
-import torchvision.transforms.functional as TF
 
+
+####
+
+
+import os
+import cv2
+import time, sys
+import json
+import pandas as pd
+import skimage.io
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+from urllib.parse import urlparse
+from sklearn.neighbors import kneighbors_graph
+from scipy.linalg import lstsq
+from scipy.spatial import distance
+from skimage.measure import find_contours
+from skimage.morphology import disk, dilation
+from scipy.ndimage.morphology import binary_dilation
+from scipy.spatial.distance import cdist
+
+# %matplotlib inline
+# mpl.rcParams['figure.dpi'] = 300
+
+from urllib.parse import urlparse
+from cellpose import models, core
+from cellpose import utils
+
+###
 
 
 def stack_imgs(imgs):
@@ -150,7 +180,17 @@ if __name__ == '__main__':
         logging.info(f'\nPredicting image {filename} ...')
         
         if os.path.isdir(filename):
-            img = [Image.open(os.path.join(filename,f)) for f in os.listdir(filename) if not f.startswith('.')]
+            # img = [Image.open(os.path.join(filename,f)) for f in os.listdir(filename) if not (f.startswith('.') or 'DAPI' in f)]
+            
+            img = []
+            nuclei_img = []
+            
+            for f in os.listdir(filename):
+                if not (f.startswith('.')):
+                    if 'DAPI' in f:
+                        nuclei_img.append(Image.open(os.path.join(filename,f)))
+                    else:
+                        img.append(Image.open(os.path.join(filename,f)))
 
         else:
             ## not implement yet
