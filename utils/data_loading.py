@@ -12,6 +12,8 @@ import cv2
 from torchvision import transforms
 import torchvision.transforms.functional as TF
 from utils.adaptive_entropy import DEE
+import cellpose.dynamics
+from scipy.ndimage import label
 
 import random
 
@@ -179,22 +181,22 @@ class MultiMadalDataset(Dataset):
         # Random crop        
         if random.random() > 0.5:
             i, j, h, w = transforms.RandomCrop.get_params(
-                images[0], output_size=(200, 200))
+                images[0], output_size=(300, 200))
             
             mask = TF.crop(mask, i, j, h, w)
             for idx in range(num_imgs):
                 images[idx] = TF.crop(images[idx], i, j, h, w)
 
         else:
-            rand_size_x = random.randint(200,500)
-            rand_size_y = random.randint(200,500)
+            rand_size_x = random.randint(300,500)
+            rand_size_y = random.randint(300,500)
             
             i, j, h, w = transforms.RandomCrop.get_params(
                 images[0], output_size=(rand_size_x, rand_size_y))
 
-            mask = TF.resized_crop(mask, i, j, h, w, size = (200, 200))      
+            mask = TF.resized_crop(mask, i, j, h, w, size = (300, 200))      
             for idx in range(num_imgs):
-                images[idx] = TF.resized_crop(images[idx], i, j, h, w, size = (200, 200))
+                images[idx] = TF.resized_crop(images[idx], i, j, h, w, size = (300, 200))
 
 #         # Random horizontal flipping
 #         if random.random() > 0.5:
@@ -230,10 +232,13 @@ class MultiMadalDataset(Dataset):
                 ])
                 
                 images[idx] = transform_norm(images[idx])
-    
-        mask = TF.to_tensor(mask).squeeze()
+        
+        ## Transform org_mask to []
+        labeled_array, _ = label(mask)
+        flow = cellpose.dynamics.labels_to_flows([labeled_array])
+        flow = TF.to_tensor(flow[0].transpose((1, 2, 0))).squeeze()
 
-        return images, mask
+        return images, flow
 
     def stack_imgs(self, imgs):
         list_img_one_ch = [img[0] for img in imgs] ## get first ch because in this case three channel are the same

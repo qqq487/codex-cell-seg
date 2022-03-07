@@ -1,2 +1,2 @@
 # python -W ignore train-single.py --epochs 1000 --batch-size 4 --learning-rate 0.000001 --data_root '../train_data/nuclei/BBBC008' --ckpt_path '../ckpts/checkpoints_single_1000/' --amp
-python -W ignore train-multi.py --epochs 15000 --batch-size 2 --learning-rate 0.000001 --data_root '../train_data/multi_refined_same_ch_wo23/' --ckpt_path '../ckpts/checkpoints_multi-5-3img_refined_15000_wo23_lastCAlastSA/' --amp
+python -W ignore train-multi.py --epochs 30000 --batch-size 2 --learning-rate 0.000001 --data_root '../train_data/multi_refined_same_ch_wo23/' --ckpt_path '../ckpts/checkpoints_multi-5-3img_refined_3000_wo23_lastCAlastSA_Cellpose_customCBAM_multi_spatial/' --amp

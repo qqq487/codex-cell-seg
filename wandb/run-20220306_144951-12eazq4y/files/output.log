@@ -1,0 +1,92 @@
+ChannelGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate output x size =  torch.Size([2, 64, 300, 200])
+INFO: Starting training:
+        Epochs:          1000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.93it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.49it/s]
+Epoch 1/1000:  67%|██████████████████████████████████████████████████████████████████████████████████████████                                             | 2/3 [00:00<00:00,  2.03img/s, loss (batch)=2.23]
+  0%|                                                                                                                                                                                 | 0/1 [00:00<?, ?it/s]
+ChannelGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate output x size =  torch.Size([1, 64, 300, 200])
+ChannelGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+Epoch 1/1000: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.81img/s, loss (batch)=2.19]
+INFO: Checkpoint 1 saved!
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.31it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.63it/s]
+Epoch 2/1000:  67%|██████████████████████████████████████████████████████████████████████████████████████████                                             | 2/3 [00:00<00:00,  2.12img/s, loss (batch)=2.54]
+  0%|                                                                                                                                                                                 | 0/1 [00:00<?, ?it/s]
+ChannelGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate output x size =  torch.Size([1, 64, 300, 200])
+ChannelGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+Epoch 2/1000: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.71img/s, loss (batch)=2.46]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.13it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.29it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.47it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.49it/s]
+ChannelGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate output x size =  torch.Size([1, 64, 300, 200])
+ChannelGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate output x size =  torch.Size([2, 64, 300, 200])
+ChannelGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+Epoch 3/1000: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.52img/s, loss (batch)=2.22]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.54it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.82it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 13.62it/s]
+Epoch 4/1000: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.66img/s, loss (batch)=1.69]
+Epoch 5/1000:   0%|                                                                                                                                                                  | 0/3 [00:00<?, ?img/s]
+  0%|                                                                                                                                                                                 | 0/1 [00:00<?, ?it/s]
+ChannelGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.22it/s]
+Epoch 5/1000:   0%|                                                                                                                                                                  | 0/3 [00:01<?, ?img/s]
+Traceback (most recent call last):
+  File "train-multi.py", line 211, in <module>
+    amp=args.amp)
+  File "train-multi.py", line 111, in train_net
+    grad_scaler.step(optimizer)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/cuda/amp/grad_scaler.py", line 338, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/cuda/amp/grad_scaler.py", line 284, in _maybe_opt_step
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/cuda/amp/grad_scaler.py", line 284, in <genexpr>
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 379, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 499, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 380, in save
+    return
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 259, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:298] . unexpected pos 38446464 vs 38446352
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "train-multi.py", line 213, in <module>
+    torch.save(net.state_dict(), 'INTERRUPTED.pth')
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 381, in save
+    _legacy_save(obj, opened_file, pickle_module, pickle_protocol)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 214, in __exit__
+    self.file_like.close()
+KeyboardInterrupt

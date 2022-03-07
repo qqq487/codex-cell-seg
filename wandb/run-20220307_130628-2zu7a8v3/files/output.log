@@ -1,0 +1,133 @@
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 128, 150, 100])
+SpatialGate input x size =  torch.Size([2, 256, 75, 50])
+SpatialGate input x size =  torch.Size([2, 512, 37, 25])
+SpatialGate input x size =  torch.Size([2, 512, 18, 12])
+INFO: Starting training:
+        Epochs:          30000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.46it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.24it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.03it/s]
+Epoch 1/30000: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.55img/s, loss (batch)=2.82]
+INFO: Checkpoint 1 saved!
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.48it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.80it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 10.43it/s]
+Epoch 2/30000: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  2.85img/s, loss (batch)=2.19]
+Epoch 3/30000:   0%|                                                                                                                                                                 | 0/3 [00:00<?, ?img/s]
+  0%|                                                                                                                                                                                 | 0/1 [00:00<?, ?it/s]
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 128, 150, 100])
+SpatialGate input x size =  torch.Size([1, 256, 75, 50])
+SpatialGate input x size =  torch.Size([1, 512, 37, 25])
+SpatialGate input x size =  torch.Size([1, 512, 18, 12])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 128, 150, 100])
+SpatialGate input x size =  torch.Size([2, 256, 75, 50])
+SpatialGate input x size =  torch.Size([2, 512, 37, 25])
+SpatialGate input x size =  torch.Size([2, 512, 18, 12])
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 128, 150, 100])
+SpatialGate input x size =  torch.Size([1, 256, 75, 50])
+SpatialGate input x size =  torch.Size([1, 512, 37, 25])
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.34it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 10.59it/s]
+Epoch 3/30000: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00,  3.26img/s, loss (batch)=2.02]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.07it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.75it/s]
+Epoch 4/30000:  67%|█████████████████████████████████████████████████████████████████████████████████████████▎                                            | 2/3 [00:01<00:00,  1.63img/s, loss (batch)=2.08]
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 128, 150, 100])
+SpatialGate input x size =  torch.Size([2, 256, 75, 50])
+SpatialGate input x size =  torch.Size([2, 512, 37, 25])
+SpatialGate input x size =  torch.Size([2, 512, 18, 12])
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 128, 150, 100])
+SpatialGate input x size =  torch.Size([1, 256, 75, 50])
+SpatialGate input x size =  torch.Size([1, 512, 37, 25])
+SpatialGate input x size =  torch.Size([1, 512, 18, 12])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 128, 150, 100])
+SpatialGate input x size =  torch.Size([2, 256, 75, 50])
+SpatialGate input x size =  torch.Size([2, 512, 37, 25])
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.33it/s]
+Epoch 4/30000: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  2.05img/s, loss (batch)=1.52]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.85it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.81it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.89it/s]
+Epoch 5/30000: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  1.68img/s, loss (batch)=1.87]
+Epoch 6/30000:   0%|                                                                                                                                                                 | 0/3 [00:00<?, ?img/s]
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 128, 150, 100])
+SpatialGate input x size =  torch.Size([1, 256, 75, 50])
+SpatialGate input x size =  torch.Size([1, 512, 37, 25])
+SpatialGate input x size =  torch.Size([1, 512, 18, 12])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 128, 150, 100])
+SpatialGate input x size =  torch.Size([2, 256, 75, 50])
+SpatialGate input x size =  torch.Size([2, 512, 37, 25])
+SpatialGate input x size =  torch.Size([2, 512, 18, 12])
+SpatialGate input x size =  torch.Size([1, 64, 300, 200])
+SpatialGate input x size =  torch.Size([1, 128, 150, 100])
+SpatialGate input x size =  torch.Size([1, 256, 75, 50])
+SpatialGate input x size =  torch.Size([1, 512, 37, 25])
+SpatialGate input x size =  torch.Size([1, 512, 18, 12])
+SpatialGate input x size =  torch.Size([2, 64, 300, 200])
+SpatialGate input x size =  torch.Size([2, 128, 150, 100])
+SpatialGate input x size =  torch.Size([2, 256, 75, 50])
+SpatialGate input x size =  torch.Size([2, 512, 37, 25])
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 13.33it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.27it/s]
+Epoch 6/30000:  67%|█████████████████████████████████████████████████████████████████████████████████████████▎                                            | 2/3 [00:00<00:00,  2.97img/s, loss (batch)=1.68]
+Traceback (most recent call last):
+  File "train-multi.py", line 211, in <module>
+    amp=args.amp)
+  File "train-multi.py", line 86, in train_net
+    for batch in train_loader:
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/utils/data/dataset.py", line 311, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 292, in __getitem__
+    img, mask = self.cell_transform(img, mask, 1)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/data_loading.py", line 199, in cell_transform
+    images[idx] = TF.resized_crop(images[idx], i, j, h, w, size = (300, 200))
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 548, in resized_crop
+    img = resize(img, size, interpolation)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 401, in resize
+    return F_pil.resize(img, size=size, interpolation=pil_interpolation, max_size=max_size)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torchvision/transforms/functional_pil.py", line 241, in resize
+    return img.resize(size[::-1], interpolation)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/PIL/Image.py", line 2008, in resize
+    return self._new(self.im.resize(size, resample, box))
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 379, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 499, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "train-multi.py", line 213, in <module>
+    torch.save(net.state_dict(), 'INTERRUPTED.pth')
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 380, in save
+    return
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/serialization.py", line 259, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:298] . unexpected pos 43498752 vs 43498648

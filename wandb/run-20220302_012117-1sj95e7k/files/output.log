@@ -1,0 +1,29 @@
+masks_pred.shape =  torch.Size([2, 4, 300, 200])
+true_masks.shape =  torch.Size([2, 4, 300, 200])
+INFO: Starting training:
+        Epochs:          15000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+Epoch 1/15000:   0%|                                                                                                                   | 0/3 [00:00<?, ?img/s]INFO: computing flows for labels
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.94it/s]
+INFO: computing flows for labels████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.95it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.97it/s]
+Epoch 1/15000:   0%|                                                                                                                   | 0/3 [00:01<?, ?img/s]
+Traceback (most recent call last):
+  File "train-multi.py", line 209, in <module>
+    amp=args.amp)
+  File "train-multi.py", line 102, in train_net
+    loss = criterion(masks_pred, true_masks) \
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/loss.py", line 1121, in forward
+    ignore_index=self.ignore_index, reduction=self.reduction)
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/functional.py", line 2824, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index)
+RuntimeError: 1only batches of spatial targets supported (3D tensors) but got targets of size: : [2, 4, 300, 200]

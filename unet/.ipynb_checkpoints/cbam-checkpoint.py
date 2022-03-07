@@ -27,7 +27,6 @@ class ChannelGate(nn.Module):
     def __init__(self, gate_channels, reduction_ratio=16, pool_types=['avg', 'max']):
         super(ChannelGate, self).__init__()
         self.gate_channels = gate_channels
-        ## print("gate_channels // reduction_ratio =", gate_channels // reduction_ratio)
         self.mlp = nn.Sequential(
             Flatten(),
             nn.Linear(gate_channels, gate_channels // reduction_ratio),
@@ -37,9 +36,8 @@ class ChannelGate(nn.Module):
         self.pool_types = pool_types
     def forward(self, x):
         channel_att_sum = None
-        
-        ## print("x size = ",x.size()) ## B*C*H*W
-    
+        #print("ChannelGate input x size = ",x.size()) ## B*C*H*W
+
         for pool_type in self.pool_types:
             if pool_type=='avg':
                 avg_pool = F.avg_pool2d( x, (x.size(2), x.size(3)), stride=(x.size(2), x.size(3)))
@@ -61,6 +59,7 @@ class ChannelGate(nn.Module):
                 channel_att_sum = channel_att_sum + channel_att_raw
 
         scale = F.sigmoid( channel_att_sum ).unsqueeze(2).unsqueeze(3).expand_as(x)
+        
         return x * scale
 
 def logsumexp_2d(tensor):
@@ -80,12 +79,62 @@ class SpatialGate(nn.Module):
         self.compress = ChannelPool()
         self.spatial = BasicConv(2, 1, kernel_size, stride=1, padding=(kernel_size-1) // 2, relu=False)
     def forward(self, x):
+        print("SpatialGate input x size = ",x.size()) ## B*C*H*W
+
         x_compress = self.compress(x)
+        print("SpatialGate after compress x shape = ",x_compress.size())
+
         x_out = self.spatial(x_compress)
+        print("SpatialGate x out shape = ",x_out.size())
+
         scale = F.sigmoid(x_out) # broadcasting
+        print("SpatialGate scale shape = ",scale.size())
+        print("SpatialGate output x size = ",(x * scale).size()) ## B*C*H*W
+        
         return x * scale
 
+class SpatialGate_custom(nn.Module):
+    def __init__(self, gate_channels):
+        super(SpatialGate_custom, self).__init__()
+        kernel_size = 7
+        self.gate_channels = gate_channels
+        self.spatial = BasicConv(gate_channels, gate_channels, kernel_size, stride=1, padding=(kernel_size-1) // 2, relu=False)
+        
+    def forward(self, x):
+        
+        #print("SpatialGate input x size = ",x.size()) ## B*C*H*W
+        
+        ## DUMB method:
+        # for batch_i in range(x.size()[0]):
+        #     batch_result = []
+        #     for channel_i in range(x.size()[1]):
+        #         assert len(x[batch_i][channel_i].size()) == 2
+        #         channel_out = self.spatial(x[batch_i][channel_i].unsqueeze(0).unsqueeze(0))
+        #         scale = F.sigmoid(channel_out)
+        #         batch_result.append(x[batch_i][channel_i] * scale)
+        #     result.append(batch_result)
+
+        x_out = self.spatial(x)
+        scale = F.sigmoid(x_out) # broadcasting
+
+        #print("SpatialGate output x size = ",(x * scale).size()) ## B*C*H*W
+
+        return x * scale    
+    
 class CBAM(nn.Module):
+    def __init__(self, gate_channels, reduction_ratio=16, pool_types=['avg', 'max'], no_spatial=False):
+        super(CBAM, self).__init__()
+        self.ChannelGate = ChannelGate(gate_channels, reduction_ratio, pool_types)
+        self.no_spatial=no_spatial
+        if not no_spatial:
+            self.SpatialGate = SpatialGate()
+    def forward(self, x):
+        x_out = self.ChannelGate(x)
+        if not self.no_spatial:
+            x_out = self.SpatialGate(x_out)
+        return x_out
+    
+class CBAM_customized(nn.Module):
     def __init__(self, gate_channels, reduction_ratio=16, pool_types=['avg', 'max'], no_spatial=False):
         super(CBAM, self).__init__()
         self.ChannelGate = ChannelGate(gate_channels, reduction_ratio, pool_types)
