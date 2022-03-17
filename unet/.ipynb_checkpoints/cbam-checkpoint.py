@@ -72,6 +72,11 @@ class ChannelPool(nn.Module):
     def forward(self, x):
         return torch.cat( (torch.max(x,1)[0].unsqueeze(1), torch.mean(x,1).unsqueeze(1)), dim=1 )
 
+    
+class ChannelPool_max(nn.Module):
+    def forward(self, x):
+        return torch.max(x,1)[0].unsqueeze(1)
+    
 class SpatialGate(nn.Module):
     def __init__(self):
         super(SpatialGate, self).__init__()
@@ -79,17 +84,12 @@ class SpatialGate(nn.Module):
         self.compress = ChannelPool()
         self.spatial = BasicConv(2, 1, kernel_size, stride=1, padding=(kernel_size-1) // 2, relu=False)
     def forward(self, x):
-        print("SpatialGate input x size = ",x.size()) ## B*C*H*W
 
         x_compress = self.compress(x)
-        print("SpatialGate after compress x shape = ",x_compress.size())
 
         x_out = self.spatial(x_compress)
-        print("SpatialGate x out shape = ",x_out.size())
 
         scale = F.sigmoid(x_out) # broadcasting
-        print("SpatialGate scale shape = ",scale.size())
-        print("SpatialGate output x size = ",(x * scale).size()) ## B*C*H*W
         
         return x * scale
 
@@ -101,23 +101,8 @@ class SpatialGate_custom(nn.Module):
         self.spatial = BasicConv(gate_channels, gate_channels, kernel_size, stride=1, padding=(kernel_size-1) // 2, relu=False)
         
     def forward(self, x):
-        
-        #print("SpatialGate input x size = ",x.size()) ## B*C*H*W
-        
-        ## DUMB method:
-        # for batch_i in range(x.size()[0]):
-        #     batch_result = []
-        #     for channel_i in range(x.size()[1]):
-        #         assert len(x[batch_i][channel_i].size()) == 2
-        #         channel_out = self.spatial(x[batch_i][channel_i].unsqueeze(0).unsqueeze(0))
-        #         scale = F.sigmoid(channel_out)
-        #         batch_result.append(x[batch_i][channel_i] * scale)
-        #     result.append(batch_result)
-
         x_out = self.spatial(x)
         scale = F.sigmoid(x_out) # broadcasting
-
-        #print("SpatialGate output x size = ",(x * scale).size()) ## B*C*H*W
 
         return x * scale    
     

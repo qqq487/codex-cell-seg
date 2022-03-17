@@ -1,0 +1,25 @@
+INFO: Starting training:
+        Epochs:          15000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.34it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.18it/s]
+Epoch 1/15000:   0%|                                                                                                                                                                 | 0/3 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train-multi.py", line 214, in <module>
+    amp=args.amp)
+  File "train-multi.py", line 106, in train_net
+    loss = criterion_lbl(masks_pred[:,0], true_masks[:,1]) \
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/tmp2/chacotw/unet/Pytorch-UNet/utils/losses.py", line 20, in forward
+    target = target.view(-1,1)
+RuntimeError: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+masks_pred.shape =  torch.Size([2, 3, 300, 200])
+true_masks.shape =  torch.Size([2, 4, 300, 200])

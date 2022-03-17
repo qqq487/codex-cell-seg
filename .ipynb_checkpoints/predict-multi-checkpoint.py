@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 import argparse
 import logging
@@ -14,7 +14,7 @@ import torchvision.transforms.functional as TF
 
 from utils.data_loading import BasicDataset
 
-from unet import UNet
+from unet import UNet, UNet_spatial, UNet_cat_spatial, UNet_cat_max, UNet_cat_max_spatial, UNet_custom_spatial
 from utils.utils import plot_img_and_mask
 
 ## CellPose dependency
@@ -41,6 +41,7 @@ from cellpose import utils
 from cellpose import dynamics
 from scipy.ndimage import label
 
+import random
 
 def stack_imgs(imgs):
     ## get first ch because in this case three channel are the same
@@ -231,12 +232,12 @@ if __name__ == '__main__':
         
         print("in_files = ",in_files)
         print("out_files = ",out_files)
-
+        
     else:
         in_files = args.input
         out_files = get_output_filenames(args)
 
-    net = UNet(n_channels=5, n_classes=3)
+    net = UNet_custom_spatial(in_channels=5, out_channels=3)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Loading model {args.model}')
@@ -263,6 +264,10 @@ if __name__ == '__main__':
                         nuclei_img.append(np.asarray(Image.open(os.path.join(filename,f))))
                     else:
                         img.append(Image.open(os.path.join(filename,f)))
+        
+            # random.shuffle(img)
+
+                   
 
         else:
             ## not implement yet

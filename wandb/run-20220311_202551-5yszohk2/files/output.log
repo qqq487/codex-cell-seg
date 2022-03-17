@@ -1,0 +1,21 @@
+INFO: Starting training:
+        Epochs:          30000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.84it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  9.79it/s]
+Epoch 1/30000:   0%|                                                                                                                                                                 | 0/3 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train-multi.py", line 230, in <module>
+    amp=args.amp)
+  File "train-multi.py", line 96, in train_net
+    assert images.shape[1] == net.n_channels, \
+  File "/home/master/09/chacotw/miniconda3/envs/unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1131, in __getattr__
+    type(self).__name__, name))
+AttributeError: 'UNet' object has no attribute 'n_channels'

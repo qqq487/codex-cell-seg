@@ -244,6 +244,7 @@ class MultiMadalDataset(Dataset):
         list_img_one_ch = [img[0] for img in imgs] ## get first ch because in this case three channel are the same
         
         return torch.stack(list_img_one_ch, dim=0)
+    
 
     
     @classmethod
@@ -262,6 +263,7 @@ class MultiMadalDataset(Dataset):
                     list_img_or_mask.append(Image.fromarray(torch.load(file).numpy()))
                 else:
                     list_img_or_mask.append(Image.open(file).convert('L'))
+                    
             return list_img_or_mask
         
         else:
@@ -291,10 +293,11 @@ class MultiMadalDataset(Dataset):
 
         img, mask = self.cell_transform(img, mask, 1)
         
+        ## shuffle channels
+        # random.shuffle(img)
+        
         stack_img = self.stack_imgs(img)
-        
-        #print("stack_img size = ",stack_img.size())
-        
+                
         sample =  {
             'image': stack_img,
             'mask': mask

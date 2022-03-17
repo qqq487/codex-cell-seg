@@ -1,0 +1,19 @@
+INFO: Starting training:
+        Epochs:          30000
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   3
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1
+        Mixed Precision: True
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 21.12it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.55it/s]
+Epoch 1/30000:   0%|                                                                                                                                                                 | 0/3 [00:00<?, ?img/s]
+Traceback (most recent call last):
+  File "train-multi.py", line 221, in <module>
+    amp=args.amp)
+  File "train-multi.py", line 109, in train_net
+    print("lbl_loss_org = {} lbl_loss = {} vec_loss = {}".format(lbl_loss_org[0],lbl_loss[0],vec_loss[0]))
+IndexError: invalid index of a 0-dim tensor. Use `tensor.item()` in Python or `tensor.item<T>()` in C++ to convert a 0-dim tensor to a number

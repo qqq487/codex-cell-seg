@@ -1,0 +1,36 @@
+{
+    "os": "Linux-5.4.0-100-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.11",
+    "heartbeatAt": "2022-03-14T16:09:48.141526",
+    "startedAt": "2022-03-14T16:09:44.222255",
+    "docker": null,
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 8,
+    "cpu_count": 64,
+    "cuda": "10.0.130",
+    "args": [
+        "--epochs",
+        "30000",
+        "--batch-size",
+        "2",
+        "--learning-rate",
+        "0.000001",
+        "--data_root",
+        "../train_data/multi_refined_same_ch_wo23/",
+        "--ckpt_path",
+        "../ckpts/checkpoints_multi-5-3img_refined_30000_wo23_Cellpose_spatial_cat_dice/",
+        "--amp"
+    ],
+    "state": "running",
+    "program": "train-multi.py",
+    "codePath": "train-multi.py",
+    "git": {
+        "remote": "https://github.com/qqq487/codex-cell-seg.git",
+        "commit": "5bc39273386cf7251253960174d253b9e5c866e7"
+    },
+    "email": "chacotw487@gmail.com",
+    "root": "/tmp2/chacotw/unet/Pytorch-UNet",
+    "host": "cml18",
+    "username": "chacotw",
+    "executable": "/home/master/09/chacotw/miniconda3/envs/unet/bin/python"
+}

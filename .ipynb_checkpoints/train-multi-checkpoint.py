@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "6"
+os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
 
 import argparse
@@ -17,8 +17,10 @@ from tqdm import tqdm
 
 from utils.data_loading import BasicDataset, MultiMadalDataset
 from utils.dice_score import dice_loss
+from utils.losses import mIoULoss, FocalLoss, BinaryDiceLoss
+
 from evaluate import evaluate
-from unet import UNet, NestedUNet
+from unet import UNet, UNet_spatial, UNet_cat_spatial, UNet_cat_max, UNet_cat_max_spatial
 from torchvision import transforms
 
 def train_net(net,
@@ -74,8 +76,12 @@ def train_net(net,
     
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'max', patience=2)  # goal: maximize Dice score
     grad_scaler = torch.cuda.amp.GradScaler(enabled=amp)
-    criterion_lbl = nn.BCEWithLogitsLoss(reduction='mean') ## nn.CrossEntropyLoss()
-    criterion_vec = nn.MSELoss(reduction='mean')
+    
+    criterion_lbl_bce = nn.BCEWithLogitsLoss(reduction='mean')
+    criterion_lbl_dice = BinaryDiceLoss()
+    criterion_lbl =  mIoULoss(n_classes=2).to(device = device)# FocalLoss()#nn.BCEWithLogitsLoss(reduction='mean') ## nn.CrossEntropyLoss()
+    
+    criterion_vec = nn.MSELoss(reduction='mean').to(device = device)
     global_step = 0
 
     # 5. Begin training
@@ -87,21 +93,33 @@ def train_net(net,
                 images = batch['image']
                 true_masks = batch['mask']
 
-                assert images.shape[1] == net.n_channels, \
-                    f'Network has been defined with {net.n_channels} input channels, ' \
+                assert images.shape[1] == net.in_channels, \
+                    f'Network has been defined with {net.in_channels} input channels, ' \
                     f'but loaded images have {images.shape[1]} channels. Please check that ' \
                     'the images are loaded correctly.'
 
                 images = images.to(device=device, dtype=torch.float32)
                 true_masks = true_masks.to(device=device, dtype=torch.float32)
+                
 
                 with torch.cuda.amp.autocast(enabled=amp):
                     masks_pred = net(images)
+                                        
+                    lbl_loss_bce = criterion_lbl_bce(masks_pred[:,0], true_masks[:,1])
+                    lbl_loss_dice = criterion_lbl_dice(masks_pred[:,0], true_masks[:,1])
+
+                    #lbl_loss_dice = dice_loss(masks_pred[:,0].permute(1, 0, 2),true_masks[:,1].permute(1, 0, 2), multiclass=True)
+                    # lbl_loss = criterion_lbl(masks_pred[:,0], true_masks[:,1])
+                    vec_loss = criterion_vec(masks_pred[:,1:], true_masks[:,2:])
                     
-                    # print("masks_pred.shape = ",masks_pred.shape)
-                    # print("true_masks.shape = ",true_masks.shape)
-                    loss = criterion_lbl(masks_pred[:,0], true_masks[:,1]) \
-                           + 5*  criterion_vec(masks_pred[:,1:], true_masks[:,2:])
+                    # print("lbl_loss_bce = {} lbl_loss_dice = {} lbl_loss = {} vec_loss = {}".format(lbl_loss_bce.item(), lbl_loss_dice.item(),lbl_loss.item(),vec_loss.item()))
+                    
+                    loss = lbl_loss_dice*0.7 + lbl_loss_bce*0.3 + vec_loss 
+                    # loss = lbl_loss_dice + vec_loss
+                    # loss = lbl_loss_bce + vec_loss
+
+                    # loss = criterion_lbl(masks_pred[:,0], true_masks[:,1]) \
+                    #        + 5*criterion_vec(masks_pred[:,1:], true_masks[:,2:])
                            # + dice_loss(F.softmax(masks_pred, dim=1).float(),
                            #             F.one_hot(true_masks, net.n_classes).permute(0, 3, 1, 2).float(),
                            #             multiclass=True)
@@ -186,11 +204,11 @@ if __name__ == '__main__':
     # n_channels=3 for RGB images
     # n_classes is the number of probabilities you want to get per pixel
     #net = NestedUNet(n_channels = 3 , n_classes = 2 )
-    net = UNet(n_channels=5, n_classes=3, bilinear=True)
+    net = UNet_cat_max(in_channels=5, out_channels=3, bilinear=True)
 
     logging.info(f'Network:\n'
-                 f'\t{net.n_channels} input channels\n'
-                 f'\t{net.n_classes} output channels (classes)\n')
+                 f'\t{net.in_channels} input channels\n'
+                 f'\t{net.out_channels} output channels\n')
                  #f'\t{"Bilinear" if net.bilinear else "Transposed conv"} upscaling')
 
     if args.load:

@@ -14,13 +14,20 @@ class FocalLoss(nn.Module):
 
     def forward(self, input, target):
         if input.dim()>2:
-            input = input.view(input.size(0),input.size(1),-1)  # N,C,H,W => N,C,H*W
+            # input = input.view(input.size(0),input.size(1),-1)  # N,C,H,W => N,C,H*W
+            input = input.reshape(input.size(0),input.size(1),-1)
             input = input.transpose(1,2)    # N,C,H*W => N,H*W,C
             input = input.contiguous().view(-1,input.size(2))   # N,H*W,C => N*H*W,C
-        target = target.view(-1,1)
+        # target = target.view(-1,1)
+        target = target.reshape(-1,1)
+        print("size input = ",input.size())
 
+        print("size target = ",target.to(torch.int64).size())
+        
         logpt = F.log_softmax(input, dim=-1)
-        logpt = logpt.gather(1,target)
+        print("size logpt = ",logpt.size())
+
+        logpt = logpt.gather(1,target.to(torch.int64))
         logpt = logpt.view(-1)
         pt = Variable(logpt.data.exp())
 
@@ -42,7 +49,8 @@ class mIoULoss(nn.Module):
 
     def to_one_hot(self, tensor):
         n,h,w = tensor.size()
-        one_hot = torch.zeros(n,self.classes,h,w).to(tensor.device).scatter_(1,tensor.view(n,1,h,w),1)
+
+        one_hot = torch.zeros(n,self.classes,h,w).to(tensor.device).scatter_(1,tensor.view(n,1,h,w).to(torch.int64),1)
         return one_hot
 
     def forward(self, inputs, target):

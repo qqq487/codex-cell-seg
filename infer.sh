@@ -1,2 +1,2 @@
 # python predict-single.py --model '../ckpts/checkpoints_single_1000/checkpoint_epoch901.pth' --input_folder '../test_data/test_imgs_single_nuclei/' --mask-threshold 0.5 --scale 1
-python -W ignore predict-multi.py --model '../ckpts/checkpoints_multi-5-3img_refined_1000_wo23_lastCAlastSA_Cellpose_customCBAM_multi_spatial/checkpoint_epoch14001.pth' --input_folder '../test_data/test_imgs_multi_with_nuclei/' --nuclei-stream True --mask-threshold 0.5 --scale 1
+python -W ignore predict-multi.py --model '../ckpts/old/checkpoints_multi-5-3img_refined_1000_wo23_lastCAlastSA_Cellpose_customCBAM_only_spatial/checkpoint_epoch14001.pth' --input_folder '../test_data/test_imgs_multi_with_nuclei/' --nuclei-stream True --mask-threshold 0.5 --scale 1
